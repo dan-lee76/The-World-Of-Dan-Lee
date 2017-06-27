@@ -585,7 +585,7 @@
             "inverse": false,
             "showTitle": true,
             "showText": true,
-            "showButtons": true,
+            "showButtons": false,
             "showArrow": true
           },
           "media": {
@@ -608,7 +608,7 @@
           },
           "title": "Donald Duck Dildo",
           "text": "The Dildo With Extra Featurs!",
-          "buttons": "<a data-app-btn=\"true\" class=\"btn btn-primary\" href=\"https://mobirise.com\">MORE</a>"
+          "buttons": "<a data-app-btn=\"true\" class=\"btn btn-primary\" href=\"https://mobirise.com\" data-toolbar=\"-mbrBtnMove\">MORE</a>"
         },
         {
           "_inherit": "testimonials1",
