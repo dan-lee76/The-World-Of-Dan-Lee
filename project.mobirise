@@ -22,7 +22,7 @@
       }
     },
     "versionFirst": "3.12.1",
-    "uniqCompNum": 59,
+    "uniqCompNum": 61,
     "versionPublish": "3.12.1",
     "favicon": "@PROJECT_PATH@/assets/images/212-128x128-2.png",
     "noImageResize": "",
@@ -979,7 +979,7 @@
             "showText": true,
             "showTitle": true
           },
-          "button": "<a data-app-btn=\"true\" class=\"btn btn-primary\" href=\"http://cf-media.sndcdn.com/pOGfeELIUd6L?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLW1lZGlhLnNuZGNkbi5jb20vcE9HZmVFTElVZDZMIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNDk5MTk4OTEwfX19XX0_&amp;Signature=Vej740f4sewgVVSe9EcHYhBgd3oXxxab52tx5L06K1~-F1JnBCdhCUYipjcwOqD1W3QM9cqCx0U5z5CsTby3aNRPC3Dnc81h2OYXBIyA1k-pOfaGtHpiUC-Sgz3g4IAjbxGeFQPhhWTjeM3k0M8W9ii8-O6JuI4lDH9t7SSjx8Tqg3A9e~fONnvQHEvYebYb0MQ5rLKigYVzavfBrJfd5X-l-qvhUB8IQYco4MD39RWGG9ODGc766Qss3b~F6VbvfAIFsEzLp-on3H1lMJAZxl~Ub42iXlmnLkT8Tb5kWJLcI5-Dv5yLphUHIJZBrY8G1Wmkif9wt4UgVaLet5HmBA__&amp;Key-Pair-Id=APKAJAGZ7VMH2PFPW6UQ\" data-toolbar=\"-mbrBtnMove\" target=\"_blank\">DOWNLOAD SONG</a>",
+          "button": "<a data-app-btn=\"true\" class=\"btn btn-primary\" href=\"https://soundcloud.com/milky-way-81458658/windows-xp-strong-and-stable\" data-toolbar=\"-mbrBtnMove\" target=\"_blank\">DOWNLOAD SONG</a>",
           "text": "Download this epic song for free!",
           "title": "AVAILABLE FOR DOWNLOAD!"
         },
@@ -1020,6 +1020,19 @@
           "button": "<a data-app-btn=\"true\" class=\"btn btn-primary\" href=\"https://play.google.com/store/apps/details?id=com.vaporwave_windows_95_dodger.game&amp;hl=en\" data-toolbar=\"-mbrBtnMove\" target=\"_blank\"><span class=\"socicon socicon-play mbr-iconfont mbr-iconfont-btn\"></span>DOWNLOAD FLAPPY 95</a>",
           "title": "DOWNLOAD WINDOWS 95 DODGER FOR GOOGLE PLAY",
           "text": "Download the offical windows 95 flappy bird!"
+        },
+        {
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "buttons1",
+          "_anchor": "buttons1-1o",
+          "_params": {
+            "paddingTop": 1,
+            "paddingBottom": 1,
+            "bgColor": "#2e2e2e"
+          },
+          "buttons": "<a data-app-btn=\"true\" class=\"btn btn-primary\" href=\"http://danlee.uk.to/assets/cringe.mp4\" data-toolbar=\"-mbrBtnMove\" target=\"_blank\">ALT VIDEO</a> <a data-app-btn=\"true\" class=\"btn btn-warning-outline btn-warning\" href=\"http://danlee.uk.to/assets/cringe_audio.mp3\" data-toolbar=\"-mbrBtnMove\" target=\"_blank\">ALT SONG</a>"
         }
       ]
     },
