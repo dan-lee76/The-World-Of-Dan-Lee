@@ -432,11 +432,11 @@ h6,
   color: #ffffff;
 }
 #menu-j .link {
-  font-size: 0.75rem;
+  font-size: 0.8rem;
 }
 #menu-j .dropdown-item,
 #menu-j .nav-dropdown-sm .link {
-  font-size: 0.812rem;
+  font-size: 0.866rem;
 }
 #menu-j .link:hover,
 #menu-j .dropdown-item:hover,
@@ -841,4 +841,80 @@ h6,
 #menu-1e .link[aria-expanded="true"],
 #menu-1e .dropdown-item[aria-expanded="true"] {
   color: #2969b0!important;
+}
+#menu-1p .hide-buttons .nav-btn {
+  display: none !important;
+}
+#menu-1p .navbar-caption {
+  color: #ffffff;
+}
+#menu-1p .navbar-toggler {
+  color: #ffffff;
+}
+#menu-1p .close-icon::before,
+#menu-1p .close-icon::after {
+  background-color: #ffffff;
+}
+#menu-1p .link,
+#menu-1p .dropdown-item {
+  color: #ffffff;
+}
+#menu-1p .link {
+  font-size: 0.75rem;
+}
+#menu-1p .dropdown-item,
+#menu-1p .nav-dropdown-sm .link {
+  font-size: 0.812rem;
+}
+#menu-1p .link:hover,
+#menu-1p .dropdown-item:hover,
+#menu-1p .link:focus,
+#menu-1p .dropdown-item:focus {
+  color: #2969b0;
+}
+#menu-1p .link[aria-expanded="true"],
+#menu-1p .dropdown-menu {
+  background: #0e0e0e;
+}
+#menu-1p .nav-dropdown-sm .link:focus,
+#menu-1p .nav-dropdown-sm .link:hover,
+#menu-1p .nav-dropdown-sm .dropdown-item:focus,
+#menu-1p .nav-dropdown-sm .dropdown-item:hover {
+  background: #202020!important;
+}
+#menu-1p .navbar,
+#menu-1p .nav-dropdown-sm,
+#menu-1p .nav-dropdown-sm .link[aria-expanded="true"],
+#menu-1p .nav-dropdown-sm .dropdown-menu {
+  background: #282828;
+}
+#menu-1p .bg-color.transparent .link {
+  color: #ffffff;
+  transition: none;
+}
+#menu-1p .bg-color.transparent.opened .link {
+  transition: color 0.2s ease-in-out;
+}
+#menu-1p .bg-color.transparent.opened .link:hover,
+#menu-1p .bg-color.transparent.opened .link:focus {
+  color: #2969b0;
+}
+#menu-1p .link[aria-expanded="true"],
+#menu-1p .dropdown-item[aria-expanded="true"] {
+  color: #2969b0!important;
+}
+#footer1-1q P {
+  color: #00ff4a;
+}
+#msg-box8-1r .mbr-section-title,
+#msg-box8-1r p {
+  color: #fff;
+}
+#header3-1w .mbr-section-title,
+#header3-1w .mbr-section-subtitle {
+  text-align: center;
+}
+#header3-1v .mbr-section-title,
+#header3-1v .mbr-section-subtitle {
+  text-align: center;
 }
