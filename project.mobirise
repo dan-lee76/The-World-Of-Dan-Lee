@@ -1,6 +1,6 @@
 {
   "settings": {
-    "currentPage": "Home.html",
+    "currentPage": "index.html",
     "name": "Dan",
     "theme": {
       "name": "mobirise3",
@@ -22,7 +22,7 @@
       }
     },
     "versionFirst": "3.12.1",
-    "uniqCompNum": 71,
+    "uniqCompNum": 76,
     "versionPublish": "3.12.1",
     "favicon": "@PROJECT_PATH@/assets/images/212-128x128-2.png",
     "noImageResize": "",
@@ -32,221 +32,6 @@
     "screenshot": "screenshot.png"
   },
   "pages": {
-    "Home.html": {
-      "settings": {
-        "main": true,
-        "title": "Dan Lee - Home",
-        "meta_descr": "Dan Lee- Home, the home of wizardness",
-        "header_custom": "",
-        "footer_custom": "",
-        "html_before": ""
-      },
-      "components": [
-        {
-          "_styles": {
-            ".hide-buttons .nav-btn": {
-              "display": "none !important"
-            },
-            ".navbar-caption": {
-              "color": "#ffffff"
-            },
-            ".navbar-toggler": {
-              "color": "#ffffff"
-            },
-            ".close-icon::before, .close-icon::after": {
-              "background-color": "#ffffff"
-            },
-            ".link, .dropdown-item": {
-              "color": "#ffffff"
-            },
-            ".link": {
-              "font-size": "0.8rem"
-            },
-            ".dropdown-item, .nav-dropdown-sm .link": {
-              "font-size": "0.866rem"
-            },
-            ".link:hover, .dropdown-item:hover, .link:focus, .dropdown-item:focus": {
-              "color": "@primaryColor"
-            },
-            ".link[aria-expanded=\"true\"], .dropdown-menu": {
-              "background": "#0e0e0e"
-            },
-            ".nav-dropdown-sm .link:focus, .nav-dropdown-sm .link:hover, .nav-dropdown-sm .dropdown-item:focus, .nav-dropdown-sm .dropdown-item:hover": {
-              "background": "#202020!important"
-            },
-            ".navbar, .nav-dropdown-sm, .nav-dropdown-sm .link[aria-expanded=\"true\"], .nav-dropdown-sm .dropdown-menu": {
-              "background": "#282828"
-            },
-            ".bg-color.transparent .link": {
-              "color": "#ffffff",
-              "transition": "none"
-            },
-            ".bg-color.transparent.opened .link": {
-              "transition": "color .2s ease-in-out"
-            },
-            ".bg-color.transparent.opened .link:hover, .bg-color.transparent.opened .link:focus": {
-              "color": "@primaryColor"
-            },
-            ".link[aria-expanded=\"true\"], .dropdown-item[aria-expanded=\"true\"]": {
-              "color": "#2969b0!important"
-            }
-          },
-          "_tags": [
-            "Theme"
-          ],
-          "_name": "menu",
-          "_anchor": "menu-j",
-          "_params": {
-            "bgColor": "#282828",
-            "fontSize": "0.8",
-            "fontName": {},
-            "fontColor": "#ffffff",
-            "fontHoverColor": "@primaryColor",
-            "transparent": true,
-            "sticky": true,
-            "logo": true,
-            "showBrand": true,
-            "collapsed": true,
-            "hideButtons": true
-          },
-          "logo": {
-            "image": {
-              "active": true,
-              "src": "@PROJECT_PATH@/assets/images/212-128x128.png",
-              "height": 128,
-              "alt": "Mobirise",
-              "link": "Home.html",
-              "title": "",
-              "linkInNewWindow": false
-            },
-            "iconFont": {
-              "class": "mbr-iconfont mbr-iconfont-menu",
-              "link": "https://mobirise.com",
-              "size": 0
-            }
-          },
-          "brand": "<a class=\"navbar-caption\" data-app-btn=\"true\" data-app-selector=\".navbar-caption\" href=\"Home.html\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">Dan Lee</a>",
-          "items": "<li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"http://unlockedinc.uk.to\" aria-expanded=\"false\">UNLOCKED INC</a></li><li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"startingwindows.html\" aria-expanded=\"false\">The World Of XP</a></li><li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" href=\"what people say.html\" data-toggle=\"dropdown-submenu\" aria-expanded=\"false\">Random Creations</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"what people say.html\">Reviews</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"DDD.html\">DDD</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"danlee.uk.to/dan.uk\">Dan.uk</a></div></li><li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" href=\"what people say.html\" aria-expanded=\"false\" data-toggle=\"dropdown-submenu\">Useful Items</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"http://danlee.uk.to/cursor/cursor.html\">Cursors</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"free_software.html\">Free Software</a></div></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-white btn-white-outline\" href=\"https://mobirise.com/\">DOWNLOAD</a></li>"
-        },
-        {
-          "_inherit": "header1",
-          "_tags": [
-            "Theme"
-          ],
-          "_name": "header4",
-          "_anchor": "header4-1",
-          "_params": {
-            "parallax": true,
-            "bgImageRadio": true,
-            "showArrow": true,
-            "bgImage": "@PROJECT_PATH@/assets/images/mqdefault-2000x1125.jpg",
-            "bgColor": "#a07e49",
-            "bgColorRadio": false,
-            "bgVideo": {
-              "width": 1280,
-              "height": 720,
-              "url": "https://www.youtube.com/embed/DMI2tIGi1Iw?rel=0&amp;showinfo=0&autoplay=0&loop=0"
-            },
-            "bgVideoRadio": false,
-            "overlay": true,
-            "overlayOpacity": "0.5",
-            "overlayColor": "#000",
-            "contentAlign": "right",
-            "showTitle": true,
-            "showText": true,
-            "showButtons": true
-          },
-          "title": "Dan Lee ☢",
-          "text": "Cømputer Science wizard &nbsp;- BETA",
-          "buttons": "<a data-app-btn=\"true\" class=\"btn btn-lg btn-info\" href=\"https://github.com/dan-lee76\" data-toolbar=\"-mbrBtnMove\" target=\"_blank\">Fork Me</a>  <a data-app-btn=\"true\" class=\"btn btn-lg btn-warning\" href=\"blog.html\" data-toolbar=\"-mbrBtnMove\">Read My Blog</a>"
-        },
-        {
-          "_styles": {
-            ".mbr-section-title, p": {
-              "color": "#fff"
-            }
-          },
-          "_tags": [
-            "Theme"
-          ],
-          "_name": "msg-box8",
-          "_anchor": "msg-box8-2",
-          "_params": {
-            "paddingTop": "3",
-            "paddingBottom": 3,
-            "parallax": false,
-            "bgImageRadio": true,
-            "bgImage": "@PROJECT_PATH@/assets/images/channel-art2-2000x1125.jpg",
-            "bgColor": "#F2F2F2",
-            "bgColorRadio": false,
-            "bgVideo": {
-              "url": "https://www.youtube.com/watch?v=uNCr7NdOJgw"
-            },
-            "bgVideoRadio": false,
-            "overlay": true,
-            "overlayOpacity": "0.2",
-            "overlayColor": "#222",
-            "showTitle": true,
-            "showText": true,
-            "showButton": false
-          },
-          "title": "",
-          "text": "<p>I am a person who trys to make stuff look cool and amazing! I am also the inventor of the DDD</p>",
-          "button": "<a data-app-btn=\"true\" class=\"btn btn-secondary\" href=\"https://mobirise.com\">SEE ALL TEMPLATES</a>"
-        },
-        {
-          "_styles": {
-            ".mbr-section-title, .btn-social": {
-              "color": "#232323"
-            }
-          },
-          "_tags": [
-            "Theme"
-          ],
-          "_name": "social-buttons2",
-          "_anchor": "social-buttons2-3",
-          "_params": {
-            "paddingTop": 3,
-            "paddingBottom": 3,
-            "bgImageRadio": true,
-            "parallax": true,
-            "bgImage": "@PROJECT_PATH@/assets/images/follow-me-bird-29-2000x814.jpg",
-            "bgColor": "#fff",
-            "bgColorRadio": false,
-            "overlay": false,
-            "overlayOpacity": 0.5,
-            "overlayColor": "#222"
-          },
-          "text": "FOLLOW ME",
-          "icons": "<a data-app-btn=\"true\" class=\"btn btn-social\" title=\"Twitter\" target=\"_blank\" href=\"https://twitter.com/\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrFonts,-mbrFontSize,-mbrBtnColor\"><i class=\"socicon socicon-twitter\"></i></a> <a data-app-btn=\"true\" class=\"btn btn-social\" title=\"Facebook\" target=\"_blank\" href=\"https://danleeslife.wordpress.com/\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrFonts,-mbrFontSize,-mbrBtnColor\"><span class=\"socicon socicon-wordpress mbr-iconfont mbr-iconfont-btn\" style=\"font-size: 25px;\"></span></a> <a data-app-btn=\"true\" class=\"btn btn-social\" title=\"Google+\" target=\"_blank\" href=\"https://github.com/dan-lee76\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrFonts,-mbrFontSize,-mbrBtnColor\"><span class=\"socicon socicon-github mbr-iconfont mbr-iconfont-btn\" style=\"font-size: 25px;\"></span></a>        "
-        },
-        {
-          "_tags": [
-            "Theme"
-          ],
-          "_name": "footer1",
-          "_styles": {
-            "P": {
-              "color": "#00ff4a"
-            }
-          },
-          "_anchor": "footer1-a",
-          "_params": {
-            "paddingTop": 2,
-            "paddingBottom": 2,
-            "bgImageRadio": false,
-            "parallax": true,
-            "bgImage": "@THEME_PATH@/components/_images/jumbotron.jpg",
-            "bgColor": "#2969b0",
-            "bgColorRadio": true,
-            "overlay": true,
-            "overlayOpacity": 0.8,
-            "overlayColor": "#444444"
-          },
-          "text": "Cøpyright (c) 2017 Dan Lee"
-        }
-      ]
-    },
     "what people say.html": {
       "settings": {
         "title": "Dan Lee - What People Say",
@@ -336,8 +121,8 @@
               "size": 0
             }
           },
-          "brand": "<a class=\"navbar-caption\" data-app-btn=\"true\" data-app-selector=\".navbar-caption\" href=\"Home.html\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">Dan Lee</a>",
-          "items": "<li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"blogdec.html\" aria-expanded=\"false\">The Life Of Dan - Blog</a></li><li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"startingwindows.html\" aria-expanded=\"false\">The World Of XP</a></li><li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" href=\"what people say.html\" data-toggle=\"dropdown-submenu\" aria-expanded=\"false\">Random Creations</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"what people say.html\">Reviews</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"DDD.html\">DDD</a></div></li><li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" href=\"what people say.html\" aria-expanded=\"false\" data-toggle=\"dropdown-submenu\">Useful Items</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"http://danlee.uk.to/cursor/cursor.html\">Cursors</a></div></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-white btn-white-outline\" href=\"https://mobirise.com/\">DOWNLOAD</a></li>"
+          "brand": "<a class=\"navbar-caption\" data-app-btn=\"true\" data-app-selector=\".navbar-caption\" href=\"index.html\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">Dan Lee</a>",
+          "items": "<li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"blogdec.html\" aria-expanded=\"false\">The Life Of Dan - Blog</a></li><li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"startingwindows.html\" aria-expanded=\"false\">The World Of XP</a></li><li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" href=\"what people say.html\" data-toggle=\"dropdown-submenu\" aria-expanded=\"false\">Random Creations</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"what people say.html\">Reviews</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"DDD.html\">DDD</a></div></li><li class=\"nav-item dropdown open\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" href=\"what people say.html\" aria-expanded=\"true\" data-toggle=\"dropdown-submenu\">Useful Items</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"http://danlee.uk.to/cursor/cursor.html\">Cursors</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"http://unlockedinc.uk.to\" target=\"_blank\">UNLOCKED INC</a></div></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-white btn-white-outline\" href=\"https://mobirise.com/\">DOWNLOAD</a></li>"
         },
         {
           "_tags": [
@@ -535,8 +320,8 @@
               "size": 0
             }
           },
-          "brand": "<a class=\"navbar-caption\" data-app-btn=\"true\" data-app-selector=\".navbar-caption\" href=\"Home.html\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">Dan Lee</a>",
-          "items": "<li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"blogdec.html\" aria-expanded=\"false\">The Life Of Dan - Blog</a></li><li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"startingwindows.html\" aria-expanded=\"false\">The World Of XP</a></li><li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" href=\"what people say.html\" data-toggle=\"dropdown-submenu\" aria-expanded=\"false\">Random Creations</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"what people say.html\">Reviews</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"DDD.html\">DDD</a></div></li><li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" href=\"what people say.html\" aria-expanded=\"false\" data-toggle=\"dropdown-submenu\">Useful Items</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"http://danlee.uk.to/cursor/cursor.html\">Cursors</a></div></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-white btn-white-outline\" href=\"https://mobirise.com/\">DOWNLOAD</a></li>"
+          "brand": "<a class=\"navbar-caption\" data-app-btn=\"true\" data-app-selector=\".navbar-caption\" href=\"index.html\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">Dan Lee</a>",
+          "items": "<li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"blogdec.html\" aria-expanded=\"false\">The Life Of Dan - Blog</a></li><li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"startingwindows.html\" aria-expanded=\"false\">The World Of XP</a></li><li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" href=\"what people say.html\" data-toggle=\"dropdown-submenu\" aria-expanded=\"false\">Random Creations</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"what people say.html\">Reviews</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"DDD.html\">DDD</a></div></li><li class=\"nav-item dropdown open\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" href=\"what people say.html\" aria-expanded=\"true\" data-toggle=\"dropdown-submenu\">Useful Items</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"http://danlee.uk.to/cursor/cursor.html\">Cursors</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"http://unlockedinc.uk.to\" target=\"_blank\">UNLOCKED INC</a></div></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-white btn-white-outline\" href=\"https://mobirise.com/\">DOWNLOAD</a></li>"
         },
         {
           "_tags": [
@@ -865,8 +650,8 @@
               "size": 0
             }
           },
-          "brand": "<a class=\"navbar-caption\" data-app-btn=\"true\" data-app-selector=\".navbar-caption\" href=\"Home.html\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">Dan Lee</a>",
-          "items": "<li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"blogdec.html\" aria-expanded=\"false\">The Life Of Dan - Blog</a></li><li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"startingwindows.html\" aria-expanded=\"false\">The World Of XP</a></li><li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" href=\"what people say.html\" data-toggle=\"dropdown-submenu\" aria-expanded=\"false\">Random Creations</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"what people say.html\">Reviews</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"DDD.html\">DDD</a></div></li><li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" href=\"what people say.html\" aria-expanded=\"false\" data-toggle=\"dropdown-submenu\">Useful Items</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"http://danlee.uk.to/cursor/cursor.html\">Cursors</a></div></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-white btn-white-outline\" href=\"https://mobirise.com/\">DOWNLOAD</a></li>"
+          "brand": "<a class=\"navbar-caption\" data-app-btn=\"true\" data-app-selector=\".navbar-caption\" href=\"index.html\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">Dan Lee</a>",
+          "items": "<li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"blogdec.html\" aria-expanded=\"false\">The Life Of Dan - Blog</a></li><li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"startingwindows.html\" aria-expanded=\"false\">The World Of XP</a></li><li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" href=\"what people say.html\" data-toggle=\"dropdown-submenu\" aria-expanded=\"false\">Random Creations</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"what people say.html\">Reviews</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"DDD.html\">DDD</a></div></li><li class=\"nav-item dropdown open\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" href=\"what people say.html\" aria-expanded=\"true\" data-toggle=\"dropdown-submenu\">Useful Items</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"http://danlee.uk.to/cursor/cursor.html\">Cursors</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"http://unlockedinc.uk.to\" target=\"_blank\">UNLOCKED INC</a></div></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-white btn-white-outline\" href=\"https://mobirise.com/\">DOWNLOAD</a></li>"
         },
         {
           "_tags": [
@@ -1037,10 +822,10 @@
         }
       ]
     },
-    "menu.html": {
+    "blogdec.html": {
       "settings": {
-        "title": "dont view me",
-        "meta_descr": "dont view me"
+        "title": "Dan Lee - Blog",
+        "meta_descr": "Dan Lee - Blog"
       },
       "components": [
         {
@@ -1126,127 +911,8 @@
               "size": 0
             }
           },
-          "brand": "<a class=\"navbar-caption\" data-app-btn=\"true\" data-app-selector=\".navbar-caption\" href=\"Home.html\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">Dan Lee</a>",
-          "items": "<li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"blogdec.html\" aria-expanded=\"false\">The Life Of Dan - Blog</a></li><li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"startingwindows.html\" aria-expanded=\"false\">The World Of XP</a></li><li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" href=\"what people say.html\" data-toggle=\"dropdown-submenu\" aria-expanded=\"false\">Random Creations</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"what people say.html\">Reviews</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"DDD.html\">DDD</a></div></li><li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" href=\"what people say.html\" aria-expanded=\"false\" data-toggle=\"dropdown-submenu\">Useful Items</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"http://danlee.uk.to/cursor/cursor.html\">Cursors</a></div></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-white btn-white-outline\" href=\"https://mobirise.com/\">DOWNLOAD</a></li>"
-        },
-        {
-          "_tags": [
-            "Theme"
-          ],
-          "_name": "footer1",
-          "_styles": {
-            "P": {
-              "color": "#00ff4a"
-            }
-          },
-          "_anchor": "footer1-19",
-          "_params": {
-            "paddingTop": 2,
-            "paddingBottom": 2,
-            "bgImageRadio": false,
-            "parallax": true,
-            "bgImage": "@THEME_PATH@/components/_images/jumbotron.jpg",
-            "bgColor": "#2969b0",
-            "bgColorRadio": true,
-            "overlay": true,
-            "overlayOpacity": 0.8,
-            "overlayColor": "#444444"
-          },
-          "text": "Cøpyright (c) 2017 Dan Lee"
-        }
-      ]
-    },
-    "blogdec.html": {
-      "settings": {
-        "title": "Dan Lee - Blog",
-        "meta_descr": "Dan Lee - Blog"
-      },
-      "components": [
-        {
-          "_styles": {
-            ".hide-buttons .nav-btn": {
-              "display": "none !important"
-            },
-            ".navbar-caption": {
-              "color": "#ffffff"
-            },
-            ".navbar-toggler": {
-              "color": "#ffffff"
-            },
-            ".close-icon::before, .close-icon::after": {
-              "background-color": "#ffffff"
-            },
-            ".link, .dropdown-item": {
-              "color": "#ffffff"
-            },
-            ".link": {
-              "font-size": "0.75rem"
-            },
-            ".dropdown-item, .nav-dropdown-sm .link": {
-              "font-size": "0.812rem"
-            },
-            ".link:hover, .dropdown-item:hover, .link:focus, .dropdown-item:focus": {
-              "color": "@primaryColor"
-            },
-            ".link[aria-expanded=\"true\"], .dropdown-menu": {
-              "background": "#0e0e0e"
-            },
-            ".nav-dropdown-sm .link:focus, .nav-dropdown-sm .link:hover, .nav-dropdown-sm .dropdown-item:focus, .nav-dropdown-sm .dropdown-item:hover": {
-              "background": "#202020!important"
-            },
-            ".navbar, .nav-dropdown-sm, .nav-dropdown-sm .link[aria-expanded=\"true\"], .nav-dropdown-sm .dropdown-menu": {
-              "background": "#282828"
-            },
-            ".bg-color.transparent .link": {
-              "color": "#ffffff",
-              "transition": "none"
-            },
-            ".bg-color.transparent.opened .link": {
-              "transition": "color .2s ease-in-out"
-            },
-            ".bg-color.transparent.opened .link:hover, .bg-color.transparent.opened .link:focus": {
-              "color": "@primaryColor"
-            },
-            ".link[aria-expanded=\"true\"], .dropdown-item[aria-expanded=\"true\"]": {
-              "color": "#2969b0!important"
-            }
-          },
-          "_tags": [
-            "Theme"
-          ],
-          "_name": "menu",
-          "_anchor": "menu-1e",
-          "_params": {
-            "bgColor": "#282828",
-            "fontSize": 0.75,
-            "fontName": {},
-            "fontColor": "#ffffff",
-            "fontHoverColor": "@primaryColor",
-            "transparent": true,
-            "sticky": true,
-            "logo": true,
-            "showBrand": true,
-            "collapsed": true,
-            "hideButtons": true
-          },
-          "logo": {
-            "image": {
-              "active": true,
-              "src": "@PROJECT_PATH@/assets/images/212-128x128.png",
-              "height": 128,
-              "alt": "Mobirise",
-              "link": "Home.html",
-              "title": "",
-              "linkInNewWindow": false
-            },
-            "iconFont": {
-              "class": "mbr-iconfont mbr-iconfont-menu",
-              "link": "https://mobirise.com",
-              "size": 0
-            }
-          },
-          "brand": "<a class=\"navbar-caption\" data-app-btn=\"true\" data-app-selector=\".navbar-caption\" href=\"Home.html\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">Dan Lee</a>",
-          "items": "<li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"startingwindows.html\" aria-expanded=\"false\">The World Of XP</a></li><li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" href=\"what people say.html\" data-toggle=\"dropdown-submenu\" aria-expanded=\"false\">Random Creations</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"what people say.html\">Reviews</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"DDD.html\">DDD</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"danlee.uk.to/dan.uk\">Dan.uk</a></div></li><li class=\"nav-item dropdown open\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" href=\"what people say.html\" aria-expanded=\"true\" data-toggle=\"dropdown-submenu\">Useful Items</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"http://danlee.uk.to/cursor/cursor.html\">Cursors</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"free_software.html\">Free Software</a></div></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-white btn-white-outline\" href=\"https://mobirise.com/\">DOWNLOAD</a></li>"
+          "brand": "<a class=\"navbar-caption\" data-app-btn=\"true\" data-app-selector=\".navbar-caption\" href=\"index.html\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">Dan Lee</a>",
+          "items": "<li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"blogdec.html\" aria-expanded=\"false\">The Life Of Dan - Blog</a></li><li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"startingwindows.html\" aria-expanded=\"false\">The World Of XP</a></li><li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" href=\"what people say.html\" data-toggle=\"dropdown-submenu\" aria-expanded=\"false\">Random Creations</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"what people say.html\">Reviews</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"DDD.html\">DDD</a></div></li><li class=\"nav-item dropdown open\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" href=\"what people say.html\" aria-expanded=\"true\" data-toggle=\"dropdown-submenu\">Useful Items</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"http://danlee.uk.to/cursor/cursor.html\">Cursors</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"http://unlockedinc.uk.to\" target=\"_blank\">UNLOCKED INC</a></div></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-white btn-white-outline\" href=\"https://mobirise.com/\">DOWNLOAD</a></li>"
         },
         {
           "_tags": [
@@ -1266,7 +932,7 @@
             },
             "bgVideoRadio": false,
             "overlay": false,
-            "overlayOpacity": "0",
+            "overlayOpacity": "0.5",
             "overlayColor": "#000",
             "contentAlign": "center",
             "showTitle": true,
@@ -1275,14 +941,18 @@
           },
           "title": "THE LIFE OF<br>DAN&nbsp;",
           "text": "The start of a new beginning...",
-          "buttons": " <a data-app-btn=\"true\" class=\"btn btn-lg btn-white btn-white-outline\" href=\"blog.html\" data-toolbar=\"-mbrBtnMove\">LAUNCH EXPERIENCE</a>"
+          "buttons": " <a data-app-btn=\"true\" class=\"btn btn-lg btn-white btn-white-outline\" href=\"blog_login.html\" data-toolbar=\"-mbrBtnMove\">LAUNCH EXPERIENCE</a>"
         }
       ]
     },
-    "free_software.html": {
+    "index.html": {
       "settings": {
-        "title": "Dan Lee - Free Software",
-        "meta_descr": "Software which is actually free!"
+        "main": true,
+        "title": "Dan Lee - Home",
+        "meta_descr": "Dan Lee- Home, the home of wizardness",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
       },
       "components": [
         {
@@ -1303,10 +973,10 @@
               "color": "#ffffff"
             },
             ".link": {
-              "font-size": "0.75rem"
+              "font-size": "0.8rem"
             },
             ".dropdown-item, .nav-dropdown-sm .link": {
-              "font-size": "0.812rem"
+              "font-size": "0.866rem"
             },
             ".link:hover, .dropdown-item:hover, .link:focus, .dropdown-item:focus": {
               "color": "@primaryColor"
@@ -1338,7 +1008,7 @@
             "Theme"
           ],
           "_name": "menu",
-          "_anchor": "menu-1p",
+          "_anchor": "menu-j",
           "_params": {
             "bgColor": "#282828",
             "fontSize": "0.8",
@@ -1358,7 +1028,7 @@
               "src": "@PROJECT_PATH@/assets/images/212-128x128.png",
               "height": 128,
               "alt": "Mobirise",
-              "link": "Home.html",
+              "link": "index.html",
               "title": "",
               "linkInNewWindow": false
             },
@@ -1368,8 +1038,174 @@
               "size": 0
             }
           },
-          "brand": "<a class=\"navbar-caption\" data-app-btn=\"true\" data-app-selector=\".navbar-caption\" href=\"Home.html\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">Dan Lee</a>",
-          "items": "<li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"startingwindows.html\" aria-expanded=\"false\">The World Of XP</a></li><li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" href=\"what people say.html\" data-toggle=\"dropdown-submenu\" aria-expanded=\"false\">Random Creations</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"what people say.html\">Reviews</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"DDD.html\">DDD</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"danlee.uk.to/dan.uk\">Dan.uk</a></div></li><li class=\"nav-item dropdown open\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" href=\"what people say.html\" aria-expanded=\"true\" data-toggle=\"dropdown-submenu\">Useful Items</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"http://danlee.uk.to/cursor/cursor.html\">Cursors</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"free_software.html\">Free Software</a></div></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-white btn-white-outline\" href=\"https://mobirise.com/\">DOWNLOAD</a></li>"
+          "brand": "<a class=\"navbar-caption\" data-app-btn=\"true\" data-app-selector=\".navbar-caption\" href=\"index.html\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">Dan Lee</a>",
+          "items": "<li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"blogdec.html\" aria-expanded=\"false\">The Life Of Dan - Blog</a></li><li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"startingwindows.html\" aria-expanded=\"false\">The World Of XP</a></li><li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" href=\"what people say.html\" data-toggle=\"dropdown-submenu\" aria-expanded=\"false\">Random Creations</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"what people say.html\">Reviews</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"DDD.html\">DDD</a></div></li><li class=\"nav-item dropdown open\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" href=\"what people say.html\" aria-expanded=\"true\" data-toggle=\"dropdown-submenu\">Useful Items</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"http://danlee.uk.to/cursor/cursor.html\">Cursors</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"http://unlockedinc.uk.to\" target=\"_blank\">UNLOCKED INC</a></div></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-white btn-white-outline\" href=\"https://mobirise.com/\">DOWNLOAD</a></li>"
+        },
+        {
+          "_inherit": "header1",
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "header4",
+          "_anchor": "header4-1",
+          "_params": {
+            "parallax": true,
+            "bgImageRadio": true,
+            "showArrow": true,
+            "bgImage": "@PROJECT_PATH@/assets/images/mbr-2-2000x1333.jpg",
+            "bgColor": "#a07e49",
+            "bgColorRadio": false,
+            "bgVideo": {
+              "width": 1280,
+              "height": 720,
+              "url": "https://www.youtube.com/embed/DMI2tIGi1Iw?rel=0&amp;showinfo=0&autoplay=0&loop=0"
+            },
+            "bgVideoRadio": false,
+            "overlay": true,
+            "overlayOpacity": "0.5",
+            "overlayColor": "#000",
+            "contentAlign": "right",
+            "showTitle": true,
+            "showText": true,
+            "showButtons": true
+          },
+          "title": "Dan Lee ☢",
+          "text": "Cømputer Science wizard - Not in BETA&nbsp;",
+          "buttons": "<a data-app-btn=\"true\" class=\"btn btn-lg btn-info\" href=\"https://github.com/dan-lee76\" data-toolbar=\"-mbrBtnMove\" target=\"_blank\">Fork Me</a>  <a data-app-btn=\"true\" class=\"btn btn-lg btn-warning\" href=\"blogdec.html\" data-toolbar=\"-mbrBtnMove\">Read My Blog</a>"
+        },
+        {
+          "_styles": {
+            ".card-subtitle": {
+              "color": "#bcbcbc"
+            },
+            ".iconbox": {
+              "background-color": "#f2f2f2",
+              "border-color": "#f2f2f2"
+            }
+          },
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "features4",
+          "_anchor": "features4-1z",
+          "_params": {
+            "iconsBgColor": "#f2f2f2",
+            "paddingTop": "1",
+            "paddingBottom": 2,
+            "bgImageRadio": false,
+            "parallax": true,
+            "bgImage": "@PROJECT_PATH@/assets/images/mqdefault-2000x1125.jpg",
+            "bgColor": "#fff",
+            "bgColorRadio": true,
+            "bgVideo": {
+              "url": "https://www.youtube.com/watch?v=uNCr7NdOJgw"
+            },
+            "bgVideoRadio": false,
+            "overlay": true,
+            "overlayOpacity": 0.5,
+            "overlayColor": "#ffffff",
+            "columns": 3,
+            "showImages": true,
+            "showTitles": true,
+            "showSubtitles": false,
+            "ShowTexts": true,
+            "showButtons": false
+          },
+          "media1": {
+            "iconFont": {
+              "class": "mbr-iconfont mbr-iconfont-features4",
+              "linkInNewWindow": false,
+              "name": "rocket",
+              "family": "MobiriseIcons",
+              "active": true,
+              "link": "",
+              "size": "",
+              "color": "black",
+              "newWindow": false
+            }
+          },
+          "title1": "Crazy",
+          "subtitle1": "Dan Lee is crazy",
+          "caption1": "I am Crazy! I come up with random things which i decide to let the world use/laugh at",
+          "button1": "<a data-app-btn=\"true\" href=\"https://mobirise.com\" class=\"btn btn-primary\">MORE</a>",
+          "media2": {
+            "iconFont": {
+              "class": "mbr-iconfont mbr-iconfont-features4",
+              "linkInNewWindow": false,
+              "name": "smile-face",
+              "family": "MobiriseIcons",
+              "active": true,
+              "link": "",
+              "size": "",
+              "color": "black",
+              "newWindow": false
+            }
+          },
+          "title2": "Happy",
+          "subtitle2": "One of Bootstrap 4's big points",
+          "caption2": "I will make you happy no matter what! If not, click here",
+          "button2": "<a data-app-btn=\"true\" href=\"https://mobirise.com\" class=\"btn btn-primary\">MORE</a>",
+          "media3": {
+            "iconFont": {
+              "class": "mbr-iconfont mbr-iconfont-features4",
+              "linkInNewWindow": false,
+              "name": "upload",
+              "family": "MobiriseIcons",
+              "active": true,
+              "link": "https://mobirise.com",
+              "size": 0,
+              "color": "black"
+            }
+          },
+          "title3": "Updates",
+          "subtitle3": "Google has a highly exhaustive list of fonts",
+          "caption3": "I am a boy believe it or not, and guess what, im lonley and have no friends, therefor i create this thing",
+          "button3": "<a data-app-btn=\"true\" href=\"https://mobirise.com\" class=\"btn btn-primary\">MORE</a>",
+          "media4": {
+            "iconFont": {
+              "active": true,
+              "class": "mbr-iconfont mbr-iconfont-features4",
+              "name": "linegraph",
+              "link": "https://mobirise.com",
+              "size": 0,
+              "color": "black",
+              "family": "et-line"
+            }
+          },
+          "title4": "Unlimited Sites",
+          "subtitle4": "Mobirise gives you the freedom to develop",
+          "caption4": "Mobirise gives you the freedom to develop as many websites as you like given the fact that it is a desktop app.",
+          "button4": "<a data-app-btn=\"true\" href=\"https://mobirise.com\" class=\"btn btn-primary\">MORE</a>",
+          "media5": {
+            "iconFont": {
+              "active": true,
+              "class": "mbr-iconfont mbr-iconfont-features4",
+              "name": "briefcase",
+              "link": "https://mobirise.com",
+              "size": 0,
+              "color": "black",
+              "family": "et-line"
+            }
+          },
+          "title5": "Trendy Website Blocks",
+          "subtitle5": "Choose from the large selection of blocks",
+          "caption5": "Choose from the large selection of latest pre-made blocks - jumbotrons, hero images, parallax scrolling, video backgrounds, hamburger menu, sticky header and more.",
+          "button5": "<a data-app-btn=\"true\" href=\"https://mobirise.com\" class=\"btn btn-primary\">MORE</a>",
+          "media6": {
+            "iconFont": {
+              "active": true,
+              "class": "mbr-iconfont mbr-iconfont-features4",
+              "name": "linegraph",
+              "link": "https://mobirise.com",
+              "size": 0,
+              "color": "black",
+              "family": "et-line"
+            }
+          },
+          "title6": "Host Anywhere",
+          "subtitle6": "Don't limit yourself to just one platform",
+          "caption6": "Publish your website to a local drive, FTP or host on Amazon S3, Google Drive, Github. Don't limit yourself to just one platform or service provider.",
+          "button6": "<a data-app-btn=\"true\" href=\"https://mobirise.com\" class=\"btn btn-primary\">MORE</a>"
         },
         {
           "_tags": [
@@ -1381,7 +1217,7 @@
               "color": "#00ff4a"
             }
           },
-          "_anchor": "footer1-1q",
+          "_anchor": "footer1-a",
           "_params": {
             "paddingTop": 2,
             "paddingBottom": 2,
@@ -1395,127 +1231,6 @@
             "overlayColor": "#444444"
           },
           "text": "Cøpyright (c) 2017 Dan Lee"
-        },
-        {
-          "_styles": {
-            ".mbr-section-title, p": {
-              "color": "#fff"
-            }
-          },
-          "_tags": [
-            "Theme"
-          ],
-          "_name": "msg-box8",
-          "_anchor": "msg-box8-1r",
-          "_params": {
-            "paddingTop": 3,
-            "paddingBottom": 3,
-            "parallax": true,
-            "bgImageRadio": true,
-            "bgImage": "@PROJECT_PATH@/assets/images/mbr-2-2000x1333.jpg",
-            "bgColor": "#F2F2F2",
-            "bgColorRadio": false,
-            "bgVideo": {
-              "url": "https://www.youtube.com/watch?v=uNCr7NdOJgw"
-            },
-            "bgVideoRadio": false,
-            "overlay": true,
-            "overlayOpacity": 0.5,
-            "overlayColor": "#222",
-            "showTitle": true,
-            "showText": true,
-            "showButton": false
-          },
-          "title": "Free Software",
-          "text": "<p>Paid Software For Free! - Always free, Always Safe!</p>",
-          "button": "<a data-app-btn=\"true\" class=\"btn btn-secondary\" href=\"https://mobirise.com\">SEE ALL TEMPLATES</a>"
-        },
-        {
-          "_styles": {
-            ".mbr-section-title, .mbr-section-subtitle": {
-              "text-align": "center"
-            }
-          },
-          "_tags": [
-            "Theme"
-          ],
-          "_name": "header3",
-          "_anchor": "header3-1w",
-          "_params": {
-            "paddingTop": 1,
-            "paddingBottom": 1,
-            "bgColor": "#fff",
-            "showMeta": true
-          },
-          "title": "How To Install:",
-          "meta": "-- 15/07/17 --"
-        },
-        {
-          "_tags": [
-            "Theme"
-          ],
-          "_name": "content1",
-          "_anchor": "content1-1y",
-          "_params": {
-            "paddingTop": 1,
-            "paddingBottom": 1,
-            "bgColor": "#fff"
-          },
-          "text": "<p>Dan Lee Presents</p>"
-        },
-        {
-          "_tags": [
-            "Theme"
-          ],
-          "_name": "video1",
-          "_anchor": "video1-1x",
-          "_params": {
-            "showText": false
-          },
-          "media": {
-            "image": {
-              "src": "@THEME_PATH@/components/_images/image1.jpg",
-              "width": 1400
-            },
-            "video": {
-              "active": true,
-              "src": "https://www.youtube.com/embed/Tq7p44IA-1U"
-            }
-          },
-          "text": "<p>Cut down the development time with drag-and-drop website builder.</p>"
-        },
-        {
-          "_styles": {
-            ".mbr-section-title, .mbr-section-subtitle": {
-              "text-align": "center"
-            }
-          },
-          "_tags": [
-            "Theme"
-          ],
-          "_name": "header3",
-          "_anchor": "header3-1v",
-          "_params": {
-            "paddingTop": 1,
-            "paddingBottom": 1,
-            "bgColor": "#fff",
-            "showMeta": true
-          },
-          "title": "Adobe Cracks",
-          "meta": "-- 15/07/17 --"
-        },
-        {
-          "_tags": [
-            "Theme"
-          ],
-          "_name": "buttons1",
-          "_anchor": "buttons1-1u",
-          "_params": {
-            "paddingTop": 1,
-            "paddingBottom": 1,
-            "bgColor": "#fff"
-          },
-          "buttons": "<a data-app-btn=\"true\" class=\"btn btn-primary\" href=\"https://mega.nz/#!0LYCwTBB!U8vF2LWEg_Ia84t2xmH8Sr5hluyE2CoSrBC6XjSw6_Y\" data-toolbar=\"-mbrBtnMove\" target=\"_blank\">Download Acrobat DC</a> "
         }
       ]
     }
