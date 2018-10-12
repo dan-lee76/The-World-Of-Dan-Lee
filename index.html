@@ -14,10 +14,28 @@
     <video autoplay muted loop id="myVideo">
         <source src="assets/css/images/lights.mp4" type="video/mp4">
     </video>
-	<body class="loading">
-		<div id="wrapper">
-			<div id="main">
+	<body>
+        <!-- The overlay -->
+        <div id="myNav" class="overlay">
 
+          <!-- Button to close the overlay navigation -->
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+          <!-- Overlay content -->
+          <div class="overlay-content">
+            <a href="intranet/index.html">Marshland Intranet</a>
+            <a href="draw/index.html">100% not a fork of draw.io</a>
+            <a href="/">Browser</a>
+          </div>
+
+        </div>
+
+        <!-- Use any element to open/show the overlay navigation menu -->
+                <div id="wrapper">
+			<div id="main">
+                <a  class="button"><span class="icon fa-code" onclick="openNav()"></span></a>
+                
+                
 				<!-- Header -->
 					<header id="header">
 						<h1>Dan Lee</h1>
@@ -27,18 +45,18 @@
 							<ul>
 								<li><a href="https://twitter.com/lee1_dan" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
 								<li><a href="https://www.snapchat.com/add/dan-lee76" class="icon fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
-								<li><a href="https://www.reddit.com/user/CheapInflation-Dusty" class="icon fa-reddit-alien"><span class="label">Reddit/span></a></li>
+								<li><a href="https://www.reddit.com/user/CheapInflation-Dusty" class="icon fa-reddit-alien"><span class="label">Reddit</span></a></li>
 								<li><a href="https://github.com/dan-lee76" class="icon fa-github"><span class="label">Github</span></a></li>
 								<li><a href="mailto:danlee@graphic-designer.com?subject=Contact - DAN LEE&body=//Keep subject line for responce" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
 							</ul>
 						</nav>
 					</header>
-           
+                    
 
 
 				<!-- Footer -->
 					<footer id="footer">
-						<span class="copyright">&copy; Dan Lee. Design: <a href="http://danlee.uk.to">Comming Soon - Dan</a>.</span>
+						<span class="copyright">&copy; Dan Lee. Version: <a href="http://danlee.uk.to">2.0.3</a></span>
 					</footer>
 
 			</div>
@@ -48,6 +66,13 @@
 			window.onload = function() { document.body.className = ''; }
 			window.ontouchmove = function() { return false; }
 			window.onorientationchange = function() { document.body.scrollTop = 0; }
+            function openNav() {
+              document.getElementById("myNav").style.height = "100%";
+            }
+
+            function closeNav() {
+              document.getElementById("myNav").style.height = "0%";
+            }
 		</script>
 	</body>
 </html>
