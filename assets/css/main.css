@@ -84,7 +84,6 @@
 		-webkit-transition: border-color 0.2s ease-in-out;
 		-ms-transition: border-color 0.2s ease-in-out;
 		transition: border-color 0.2s ease-in-out;
-		border-bottom: dotted 1px;
 		color: inherit;
 		outline: 0;
 		text-decoration: none;
@@ -1332,9 +1331,11 @@
     cursor:pointer;
     overflow: hidden;
     outline:none;
+    text-decoration: none !important;
 }
 /* The Overlay (background) */
 .overlay {
+    font-family: 'Lato', sans-serif;
     height: 0%;
     width: 100%;
     position: fixed;
@@ -1345,27 +1346,33 @@
     background-color: rgba(0,0,0, 0.9);
     overflow-y: hidden;
     transition: 0.5s;
+    text-decoration: none !important;
 }
 
 .overlay-content {
+    font-family: 'Lato', sans-serif;
     position: relative;
     top: 25%;
     width: 100%;
     text-align: center;
     margin-top: 30px;
+    text-decoration: none !important;
 }
 
 .overlay a {
+    font-family: 'Lato', sans-serif;
     padding: 8px;
     text-decoration: none;
     font-size: 36px;
     color: #818181;
     display: block;
     transition: 0.3s;
+    text-decoration: none !important;
 }
 
 .overlay a:hover, .overlay a:focus {
     color: #f1f1f1;
+    text-decoration: none !important;
 }
 
 .overlay .closebtn {
@@ -1373,6 +1380,7 @@
     top: 20px;
     right: 45px;
     font-size: 60px;
+    text-decoration: none !important;
 }
 
 @media screen and (max-height: 450px) {
@@ -1383,4 +1391,45 @@
     top: 15px;
     right: 35px;
   }
+}
+.ml5 {
+  position: relative;
+  font-weight: 300;
+  font-size: 4.5em;
+  color: #ffffff;
+}
+
+.ml5 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+  line-height: 1em;
+}
+
+.ml5 .line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 3px;
+  width: 100%;
+  background-color: #402d2d;
+  transform-origin: 0.5 0;
+}
+
+.ml5 .ampersand {
+  font-family: Baskerville, "EB Garamond", serif;
+  font-style: italic;
+  font-weight: 400;
+  width: 1em;
+  margin-right: -0.1em;
+  margin-left: -0.1em;
+}
+
+.ml5 .letters {
+  display: inline-block;
+  opacity: 0;
 }
