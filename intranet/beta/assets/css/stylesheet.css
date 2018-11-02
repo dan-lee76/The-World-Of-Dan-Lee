@@ -1,7 +1,11 @@
 body{
     background-color:#F5F5F5;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin: 0;
 }
 .centre {
+    margin-top: 0;
     margin: auto;
     width: 50%;
     padding: 10px;
@@ -73,8 +77,10 @@ body{
     border: 2px solid #A9A9A9;
 }
 .imgop {
+    margin-top: 0;
+    margin-bottom: 0;
     opacity: 0.3;
-    width: 4%;
+    width: 3%;
     filter: alpha(opacity=50); /* For IE8 and earlier */
 }
 
@@ -82,10 +88,19 @@ body{
     opacity: 1.0;
     filter: alpha(opacity=100); /* For IE8 and earlier */
 }
+.marquee{
+    text-align: center;
+    font-family: "Calibri";
+    color: #FFFFFF;
+    /*background-color: #a91717; <<<<<Red*/
+    background-color: #305DEA;
+    padding: 5px;
+    border: none !important;
+}
 #imgrow{
     display:flex;
     width: 100
-    flex-wrap:nowrap;
+    flex-wrap: nowrap;
 }
 
 #imgrow span img{
@@ -102,6 +117,12 @@ div.text{
     font-family: "Calibri";
     color: #A9A9A9
 }
+div.text-row{
+    width: 125%;
+    text-align: center;
+    font-family: "Calibri";
+    color: #A9A9A9
+}
 input[type=text] {
     margin: auto;
     width:  100%;
@@ -114,7 +135,7 @@ input[type=text] {
     background-image: url('../img/searchicon.png');
     background-position: 10px 10px;
     background-repeat: no-repeat;
-    padding: 12px 20px 12px 60px;
+    padding: 15px 20px 10px 68px;
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
     }
