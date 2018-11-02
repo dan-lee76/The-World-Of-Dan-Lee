@@ -58,24 +58,6 @@ body{
     -webkit-user-select: none;
     -ms-user-select: none;
 }
-.button {
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-}
-
-.button_notice {
-    background-color: #F5F5F5;
-    color: black;
-    border: 2px solid #A9A9A9;
-}
 .imgop {
     margin-top: 0;
     margin-bottom: 0;
@@ -94,7 +76,7 @@ body{
     color: #FFFFFF;
     /*background-color: #a91717; <<<<<Red*/
     background-color: #305DEA;
-    padding: 5px;
+    padding: 10px;
     border: none !important;
 }
 #imgrow{
@@ -115,13 +97,23 @@ body{
 div.text{
     text-align: center;
     font-family: "Calibri";
-    color: #A9A9A9
+    color: #A9A9A9;
+        
 }
 div.text-row{
     width: 125%;
     text-align: center;
     font-family: "Calibri";
-    color: #A9A9A9
+    color: #A9A9A9;
+    font-size: 15ww;
+    transform: translateY(-50%);
+}
+div.text-frog{
+    text-align: center;
+    font-family: "Calibri";
+    color: #A9A9A9;
+    font-size: 15ww;
+    transform: translateY(-50%);
 }
 input[type=text] {
     margin: auto;
