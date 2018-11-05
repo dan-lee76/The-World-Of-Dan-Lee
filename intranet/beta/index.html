@@ -13,13 +13,15 @@
 </head>
 
 
-<body>
+<body onload="startTime()">
 <div>
     <div>
-        <marquee class="marquee" width="100%" direction="left" height="5%" scrollamount="10">
-        NOTICES:&nbsp;&nbsp;&nbsp;Changing rooms are fixed!&nbsp;&nbsp;&bullet;&nbsp;&nbsp;Y11 Mocks 5th-16th NO ENTRY to P.E at break or lunch. PLEASE BE QUIET!&nbsp;&nbsp;&bullet;&nbsp;&nbsp;DAN IS AMAZING!&nbsp;&nbsp;&bullet;&nbsp;&nbsp;I AM A NOTICE&nbsp;&nbsp;&bullet;&nbsp;&nbsp;This was created by DAN AND HENRY :)
-</marquee>
+        <div id="txt"class="time"></div>
+        <div class="marquee">
+            <p>NOTICES:&nbsp;&nbsp;&nbsp;Changing rooms are fixed!&nbsp;&nbsp;&bullet;&nbsp;&nbsp;Y11 Mocks 5th-16th NO ENTRY to P.E at break or lunch. PLEASE BE QUIET!&nbsp;&nbsp;&bullet;&nbsp;&nbsp;DAN IS AMAZING!&nbsp;&nbsp;&bullet;&nbsp;&nbsp;I AM A NOTICE&nbsp;&nbsp;&bullet;&nbsp;&nbsp;This was created by DAN AND HENRY :)</p>
+</div>
     </div>
+    <div id="txt"></div>
   <div>
       <input type="image" src="assets/img/bg.png" onclick="toggle_visibility('tt');"/>
     </div>
@@ -97,7 +99,5 @@
     </div>
 </div>
 </body>
-<script>document.ondragstart = function () { return false; };
-</script>
-<script src="assets/js/type.js"></script>
+<script src="assets/js/scripts.js"></script>
 </html>
