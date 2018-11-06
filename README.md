@@ -20,8 +20,8 @@ Yeah sure, hust create a pull request and ill have a look
 
 ## Authors
 
-* **Dan Lee** - *Done EVERYTHING* - [Dan](https://github.com/dan-lee76)
-And of course help from W3schools and stack overflow
+* **Dan Lee** - *Created EVERYTHING* - [Dan](https://github.com/dan-lee76)
+* And of course help from W3schools and stack overflow
 
 ## License
 
