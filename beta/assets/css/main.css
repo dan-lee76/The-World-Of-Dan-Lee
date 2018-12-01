@@ -1091,7 +1091,7 @@
 			-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
 			-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
 			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
-			background-image: url("../../images/bg.jpg");
+			background-image: url("../../images/bg.jpeg");
 			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
@@ -1592,3 +1592,24 @@
 		body.is-loading #footer {
 			opacity: 0;
 		}
+		/* width */
+		::-webkit-scrollbar {
+			width: 8px;
+			background-color: transparent;
+		}
+
+		/* Track */
+		::-webkit-scrollbar-track{
+	 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+		border-radius: 8px;
+		 background-color: transparent;
+}
+
+		/* Handle */
+		::-webkit-scrollbar-thumb {
+			border-radius: 8px;
+			-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+			background-color: #555;
+		}
+
+		/* Handle on hover */
