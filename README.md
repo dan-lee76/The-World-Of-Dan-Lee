@@ -20,7 +20,7 @@ Yeah sure you can fork, just make sure you link back to me, and no doubt it will
 
 ## Contributing
 
-Yeah sure, hust create a pull request and ill have a look
+Yeah sure, just create a pull/push request and ill have a look
 
 
 ## Authors
