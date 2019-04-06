@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Dan Lee</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+        <link rel="stylesheet" href="stylesheet.css" />
+        <link rel="sfavicon" href="assets/css/images/fav.ico" type="image/x-icon" />
+	<link rel="shortcut icon" type="images/ico" href="assets/css/images/fav.ico"/>
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+    <body>
+        <h1 class="focus-in-contract-bck cen">Dan Lee</h1>
+        <div>
+            Currently in <span id="weather-loca-name"></span> , <span id="weather-sts-country"></span> the weather is <span id="weather-desc"></span> <span id="weather-temp"></span>°C with a humidity of <span id="weather-hum"></span>% and a pressure of <span id="weather-pres"></span>hPa. Wind speeds are at <span id="weather-win-spe"></span>mps blowing at <span id="weather-win-deg"></span>°.
+        </div>
+        <div>
+        <span id="ip-isp"></span>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            //$.getJSON('http://api.openweathermap.org/data/2.5/weather?q=wisbech&appid=1097e7790d09472fcbbc6b813f92b183').success(function(response){
+            // Process response data;
+        </script>
+        <script>
+            var IPlocation = "http://ip-api.com/json";
+            $.getJSON(IPlocation, function city(data) {
+                var city = data.city;
+                document.getElementById("ip-isp").innerHTML = data.isp;
+                document.getElementById("ip-isp").innerHTML = data.zip;
+                
+                
+                var xmlhttp = new XMLHttpRequest();
+                xmlhttp.onreadystatechange = function() {
+                  if (this.readyState == 4 && this.status == 200) {
+                    var myObj = JSON.parse(this.responseText);
+                      document.getElementById("weather-desc").innerHTML = myObj.weather[0].description;
+                      document.getElementById("weather-temp").innerHTML = myObj.main.temp;
+                      document.getElementById("weather-loca-name").innerHTML = myObj.name;
+                      document.getElementById("weather-pres").innerHTML = myObj.main.pressure;
+                      document.getElementById("weather-hum").innerHTML = myObj.main.humidity;
+                      document.getElementById("weather-win-spe").innerHTML = myObj.wind.speed;
+                      document.getElementById("weather-win-deg").innerHTML = myObj.wind.deg;
+                      document.getElementById("weather-sts-country").innerHTML = myObj.sys.country;
+                      
+                      
+                  }
+                };
+                
+                xmlhttp.open("GET", "http://api.openweathermap.org/data/2.5/weather?q="+city+"&units=metric&appid=1097e7790d09472fcbbc6b813f92b183", true);
+                xmlhttp.send();
+                });
+            </script>
+	</body>
+    
+</html>
