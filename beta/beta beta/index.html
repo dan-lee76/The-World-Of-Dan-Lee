@@ -12,12 +12,16 @@
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 	</head>
     <body>
-        <h1 class="focus-in-contract-bck cen">Dan Lee</h1>
-        <div>
-            Currently in <span id="weather-loca-name"></span> , <span id="weather-sts-country"></span> the weather is <span id="weather-desc"></span> <span id="weather-temp"></span>°C with a humidity of <span id="weather-hum"></span>% and a pressure of <span id="weather-pres"></span>hPa. Wind speeds are at <span id="weather-win-spe"></span>mps blowing at <span id="weather-win-deg"></span>°.
+        <div class="bar">
+            ISP:<span class = "ipin" id="ip-isp"></span>
+            POSTAL:<span id="ip-postal"></span>
+            IP: <span id="ip-ip"></span>
+            Latitude: <span id="ip-lat"></span>
+            Longitude: <span id="ip-long"></span>
         </div>
-        <div>
-        <span id="ip-isp"></span>
+        <h1 class="focus-in-contract-bck cen centre">Dan Lee</h1>
+        <div class="centre">
+            Currently in <span id="weather-loca-name"></span> , <span id="weather-sts-country"></span> the weather is <span id="weather-desc"></span> <span id="weather-temp"></span>°C with a humidity of <span id="weather-hum"></span>% and a pressure of <span id="weather-pres"></span>hPa. Wind speeds are at <span id="weather-win-spe"></span>mps blowing at <span id="weather-win-deg"></span>°.
         </div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script>
@@ -25,12 +29,14 @@
             // Process response data;
         </script>
         <script>
-            var IPlocation = "http://ip-api.com/json";
+            var IPlocation = "https://ipapi.co/json";
             $.getJSON(IPlocation, function city(data) {
                 var city = data.city;
-                document.getElementById("ip-isp").innerHTML = data.isp;
-                document.getElementById("ip-isp").innerHTML = data.zip;
-                
+                document.getElementById("ip-isp").innerHTML = data.org;
+                document.getElementById("ip-postal").innerHTML = data.postal;
+                document.getElementById("ip-ip").innerHTML = data.ip;
+                document.getElementById("ip-lat").innerHTML = data.latitude;
+                document.getElementById("ip-long").innerHTML = data.longitude;
                 
                 var xmlhttp = new XMLHttpRequest();
                 xmlhttp.onreadystatechange = function() {
@@ -53,6 +59,5 @@
                 xmlhttp.send();
                 });
             </script>
-	</body>
     
 </html>
