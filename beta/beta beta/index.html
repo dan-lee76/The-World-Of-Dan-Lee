@@ -6,22 +6,31 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
         <link rel="stylesheet" href="stylesheet.css" />
+        <link rel="stylesheet" href="stylesheet.sass" />
         <link rel="sfavicon" href="assets/css/images/fav.ico" type="image/x-icon" />
 	<link rel="shortcut icon" type="images/ico" href="assets/css/images/fav.ico"/>
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 	</head>
     <body>
+        <!-- particles.js container --> 
+<div id="particles-js"></div>
+
+<!-- particles.js lib - https://github.com/VincentGarreau/particles.js --> 
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
         <div class="bar">
-            ISP:<span class = "ipin" id="ip-isp"></span>
-            POSTAL:<span id="ip-postal"></span>
-            IP: <span id="ip-ip"></span>
-            Latitude: <span id="ip-lat"></span>
-            Longitude: <span id="ip-long"></span>
+            <div class="text-focus-in-2">
+            Internet Service Provider:<span class="ipin" id="ip-isp"></span>
+            Postcode:<span class="ipin" id="ip-postal"></span>
+            IP: <span class="ipin" id="ip-ip"></span>
+            Latitude: <span class="ipin" id="ip-lat"></span>
+            Longitude: <span class="ipin" id="ip-long"></span>
+            </div>  
         </div>
-        <h1 class="focus-in-contract-bck cen centre">Dan Lee</h1>
-        <div class="centre">
-            Currently in <span id="weather-loca-name"></span> , <span id="weather-sts-country"></span> the weather is <span id="weather-desc"></span> <span id="weather-temp"></span>°C with a humidity of <span id="weather-hum"></span>% and a pressure of <span id="weather-pres"></span>hPa. Wind speeds are at <span id="weather-win-spe"></span>mps blowing at <span id="weather-win-deg"></span>°.
+        <h1 class="text-shadow-pop-br cen centre">Dan Lee</h1>
+        <div class="text-focus-in centre">
+            Currently in <span id="weather-loca-name"></span> , <span id="weather-sts-country"></span> the weather is <span id="weather-desc"></span> <span id="weather-temp"></span>°C with a humidity of <span id="weather-hum"></span>% and a pressure of <span id="weather-pres"></span> hPa.<br> Wind speeds are at <span id="weather-win-spe"></span>mps blowing at <span id="weather-win-deg"></span>°.
+        <p>TODO: https://codepen.io/victorfreire/pen/QywRNM</p>
         </div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script>
@@ -34,7 +43,7 @@
                 var city = data.city;
                 document.getElementById("ip-isp").innerHTML = data.isp;
                 document.getElementById("ip-postal").innerHTML = data.zip;
-                document.getElementById("ip-ip").innerHTML = data.ip;
+                document.getElementById("ip-ip").innerHTML = data.query;
                 document.getElementById("ip-lat").innerHTML = data.lat;
                 document.getElementById("ip-long").innerHTML = data.lon;
                 
@@ -59,5 +68,117 @@
                 xmlhttp.send();
                 });
             </script>
+        <script>
+        particlesJS("particles-js", {
+  "particles": {
+    "number": {
+      "value": 355,
+      "density": {
+        "enable": true,
+        "value_area": 789.1476416322727
+      }
+    },
+    "color": {
+      "value": "#ffffff"
+    },
+    "shape": {
+      "type": "circle",
+      "stroke": {
+        "width": 0,
+        "color": "#000000"
+      },
+      "polygon": {
+        "nb_sides": 5
+      },
+      "image": {
+        "src": "img/github.svg",
+        "width": 100,
+        "height": 100
+      }
+    },
+    "opacity": {
+      "value": 0.48927153781200905,
+      "random": false,
+      "anim": {
+        "enable": true,
+        "speed": 0.2,
+        "opacity_min": 0,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 2,
+      "random": true,
+      "anim": {
+        "enable": true,
+        "speed": 2,
+        "size_min": 0,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": false,
+      "distance": 150,
+      "color": "#ffffff",
+      "opacity": 0.4,
+      "width": 1
+    },
+    "move": {
+      "enable": true,
+      "speed": 0.2,
+      "direction": "none",
+      "random": true,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false,
+      "attract": {
+        "enable": false,
+        "rotateX": 600,
+        "rotateY": 1200
+      }
+    }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "bubble"
+      },
+      "onclick": {
+        "enable": true,
+        "mode": "push"
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 400,
+        "line_linked": {
+          "opacity": 1
+        }
+      },
+      "bubble": {
+        "distance": 83.91608391608392,
+        "size": 1,
+        "duration": 3,
+        "opacity": 1,
+        "speed": 3
+      },
+      "repulse": {
+        "distance": 200,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": true
+});
+        </script>
     
 </html>

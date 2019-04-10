@@ -1,6 +1,25 @@
+body {
+    margin: 0;
+    background-color: #17182f;
+    overflow: hidden;
+}
+
+canvas {
+    display: block;
+    vertical-align: bottom;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
 .centre{ 
     align-content: center;
     text-align: center;
+    color: white;
+    font-family: 'Roboto', sans-serif;
 }
 
 h1.cen{
@@ -10,8 +29,8 @@ h1.cen{
 }
 .bar{
     overflow: hidden;
-    background-color: #2E7282;
-    color: #79AEBB;
+    background-color: #0099cc;
+    color: #000;
     display: block;
     top: 0;
     left: 0;
@@ -19,6 +38,7 @@ h1.cen{
     position: absolute;
     padding: 10px;
     font-family: 'Roboto', sans-serif;
+    text-align: center
     
 }
 .ipin{
@@ -62,3 +82,24 @@ h1.cen{
     opacity: 1;
   }
 }
+/**
+ * ----------------------------------------
+ * animation text-shadow-pop-br
+ * ----------------------------------------
+ */
+.text-shadow-pop-br{-webkit-animation:text-shadow-pop-br 1.5s .2s both;animation:text-shadow-pop-br 1.5s .2s both}
+@-webkit-keyframes text-shadow-pop-br{0%{text-shadow:0 0 #555,0 0 #555,0 0 #555,0 0 #555,0 0 #555,0 0 #555,0 0 #555,0 0 #555;-webkit-transform:translateX(0) translateY(0);transform:translateX(0) translateY(0)}100%{text-shadow:1px 1px #555,2px 2px #555,3px 3px #555,4px 4px #555,5px 5px #555,6px 6px #555,7px 7px #555,8px 8px #555;-webkit-transform:translateX(-8px) translateY(-8px);transform:translateX(-8px) translateY(-8px)}}@keyframes text-shadow-pop-br{0%{text-shadow:0 0 #555,0 0 #555,0 0 #555,0 0 #555,0 0 #555,0 0 #555,0 0 #555,0 0 #555;-webkit-transform:translateX(0) translateY(0);transform:translateX(0) translateY(0)}100%{text-shadow:1px 1px #555,2px 2px #555,3px 3px #555,4px 4px #555,5px 5px #555,6px 6px #555,7px 7px #555,8px 8px #555;-webkit-transform:translateX(-8px) translateY(-8px);transform:translateX(-8px) translateY(-8px)}}
+/**
+ * ----------------------------------------
+ * animation text-focus-in
+ * ----------------------------------------
+ */
+.text-focus-in{-webkit-animation:text-focus-in 1s cubic-bezier(.55,.085,.68,.53) 1.5s both;animation:text-focus-in 1s cubic-bezier(.55,.085,.68,.53) 1.5s both}
+@-webkit-keyframes text-focus-in{0%{-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-filter:blur(0);filter:blur(0);opacity:1}}@keyframes text-focus-in{0%{-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-filter:blur(0);filter:blur(0);opacity:1}}
+/**
+ * ----------------------------------------
+ * animation text-focus-in slow
+ * ----------------------------------------
+ */
+.text-focus-in-2{-webkit-animation:text-focus-in .75s cubic-bezier(.55,.085,.68,.53) 1s both;animation:text-focus-in .75s cubic-bezier(.55,.085,.68,.53) 1s both}
+@-webkit-keyframes text-focus-in{0%{-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-filter:blur(0);filter:blur(0);opacity:1}}@keyframes text-focus-in{0%{-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-filter:blur(0);filter:blur(0);opacity:1}}
