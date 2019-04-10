@@ -29,14 +29,14 @@
             // Process response data;
         </script>
         <script>
-            var IPlocation = "https://ipapi.co/json";
+            var IPlocation = "http://ip-api.com/json";
             $.getJSON(IPlocation, function city(data) {
                 var city = data.city;
-                document.getElementById("ip-isp").innerHTML = data.org;
-                document.getElementById("ip-postal").innerHTML = data.postal;
+                document.getElementById("ip-isp").innerHTML = data.isp;
+                document.getElementById("ip-postal").innerHTML = data.zip;
                 document.getElementById("ip-ip").innerHTML = data.ip;
-                document.getElementById("ip-lat").innerHTML = data.latitude;
-                document.getElementById("ip-long").innerHTML = data.longitude;
+                document.getElementById("ip-lat").innerHTML = data.lat;
+                document.getElementById("ip-long").innerHTML = data.lon;
                 
                 var xmlhttp = new XMLHttpRequest();
                 xmlhttp.onreadystatechange = function() {
