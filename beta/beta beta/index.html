@@ -20,11 +20,11 @@
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
         <div class="bar">
             <div class="text-focus-in-2">
-            Internet Service Provider:<span class="ipin" id="ip-isp"></span>
-            Postcode:<span class="ipin" id="ip-postal"></span>
-            IP: <span class="ipin" id="ip-ip"></span>
-            Latitude: <span class="ipin" id="ip-lat"></span>
-            Longitude: <span class="ipin" id="ip-long"></span>
+            ｜Internet Service Provider: <span class="ipin" id="ip-isp"></span>
+            ｜Postcode: <span class="ipin" id="ip-postal"></span>
+            ｜IP: <span class="ipin" id="ip-ip"></span>
+            ｜Latitude: <span class="ipin" id="ip-lat"></span>
+            ｜Longitude: <span class="ipin" id="ip-long"></span>｜
             </div>  
         </div>
         <h1 class="text-shadow-pop-br cen centre">Dan Lee</h1>
@@ -33,29 +33,35 @@
             <br>
             <br>
             Currently in <span id="weather-loca-name"></span> , <span id="weather-sts-country"></span> the weather is <span id="weather-desc"></span> <span id="weather-temp"></span>°C with a humidity of <span id="weather-hum"></span>% and a pressure of <span id="weather-pres"></span> hPa.<br> Wind speeds are at <span id="weather-win-spe"></span>mps blowing at <span id="weather-win-deg"></span>°.
-        <p>TODO: https://codepen.io/victorfreire/pen/QywRNM </p>
+        <p>TODO: Menu </p>
         </div>
                 <div class="panel pink centre">
-              <button onclick="window.location.href='https://www.snapchat.com/add/dan-lee76'">Ghostface</button>
-              <button onclick="window.location.href='https://www.reddit.com/user/CheapInflation-Dusty'">Extraterrorestrial Alien</button>
-              <button onclick="window.location.href='https://github.com/dan-lee76'">A Fork</button>
-              <button onclick="window.location.href='mailto:danlee@graphic-designer.com?subject=Contact - DAN LEE&body=//Keep subject line for responce'">Electronic Mail</button>
+              <button class="slide-in-bottom-1" onclick="window.location.href='https://www.snapchat.com/add/dan-lee76'">Ghostface</button>
+              <button class="slide-in-bottom-2"o nclick="window.location.href='https://www.reddit.com/user/CheapInflation-Dusty'">Extraterrorestrial Alien</button>
+              <button class="slide-in-bottom-3" onclick="window.location.href='https://github.com/dan-lee76'">A Fork</button>
+              <button class="slide-in-bottom-4" onclick="window.location.href='mailto:danlee@graphic-designer.com?subject=Contact - DAN LEE&body=//Keep subject line for responce'">Electronic Mail</button>
             </div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script>
             //$.getJSON('http://api.openweathermap.org/data/2.5/weather?q=wisbech&appid=1097e7790d09472fcbbc6b813f92b183').success(function(response){
             // Process response data;
+            //document.getElementById("weather-desc").innerHTML = original.substr(original.indexOf(" ") + 1);
         </script>
         <script>
-            var IPlocation = "https://ipapi.co/json";
+            var IPlocation = "https://ip.nf/me.json";
             $.getJSON(IPlocation, function city(data) {
-                var city = data.city;
-                document.getElementById("ip-isp").innerHTML = data.org;
-                document.getElementById("ip-postal").innerHTML = data.postal;
-                document.getElementById("ip-ip").innerHTML = data.ip;
-                document.getElementById("ip-lat").innerHTML = data.latitude;
-                document.getElementById("ip-long").innerHTML = data.longitude;
-                
+                var city = data.ip.city;
+                var isp = data.ip.asn;
+                var lat = data.ip.latitude;
+                lat = lat.toString();
+                var long = data.ip.longitude;
+                long = long.toString();
+                document.getElementById("ip-isp").innerHTML = isp.substr(isp.indexOf(" ") + 1);
+                document.getElementById("ip-postal").innerHTML = data.ip.post_code;
+                document.getElementById("ip-ip").innerHTML = data.ip.ip;
+                document.getElementById("ip-lat").innerHTML = lat.slice(0, 5);
+                document.getElementById("ip-long").innerHTML = long.slice(0, 5);
+            
                 var xmlhttp = new XMLHttpRequest();
                 xmlhttp.onreadystatechange = function() {
                   if (this.readyState == 4 && this.status == 200) {
@@ -73,9 +79,9 @@
                   }
                 };
                 
-                xmlhttp.open("GET", "https://api.openweathermap.org/data/2.5/weather?q="+city+"&units=metric&appid=1097e7790d09472fcbbc6b813f92b183", true);
+                xmlhttp.open("GET", "https://api.openweathermap.org/data/2.5/weather?lat="+lat+"&lon="+long+"&units=metric&appid=1097e7790d09472fcbbc6b813f92b183", true);
                 xmlhttp.send();
-                });
+            });
             </script>
         <script>
         particlesJS("particles-js", {
@@ -203,7 +209,7 @@
         greet = 'Good Evening';
 
     document.getElementById('lblGreetings').innerHTML =
-        '<b>' + greet + '</b> my friend';
+        '<b>' + greet + '</b> my sexy friend.';
 </script> 
     </body>
 </html>
