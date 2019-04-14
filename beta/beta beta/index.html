@@ -38,14 +38,14 @@
             // Process response data;
         </script>
         <script>
-            var IPlocation = "http://ip-api.com/json";
+            var IPlocation = "https://ipapi.co/json";
             $.getJSON(IPlocation, function city(data) {
                 var city = data.city;
-                document.getElementById("ip-isp").innerHTML = data.isp;
-                document.getElementById("ip-postal").innerHTML = data.zip;
-                document.getElementById("ip-ip").innerHTML = data.query;
-                document.getElementById("ip-lat").innerHTML = data.lat;
-                document.getElementById("ip-long").innerHTML = data.lon;
+                document.getElementById("ip-isp").innerHTML = data.org;
+                document.getElementById("ip-postal").innerHTML = data.postal;
+                document.getElementById("ip-ip").innerHTML = data.ip;
+                document.getElementById("ip-lat").innerHTML = data.latitude;
+                document.getElementById("ip-long").innerHTML = data.longitude;
                 
                 var xmlhttp = new XMLHttpRequest();
                 xmlhttp.onreadystatechange = function() {
@@ -64,7 +64,7 @@
                   }
                 };
                 
-                xmlhttp.open("GET", "http://api.openweathermap.org/data/2.5/weather?q="+city+"&units=metric&appid=1097e7790d09472fcbbc6b813f92b183", true);
+                xmlhttp.open("GET", "https://api.openweathermap.org/data/2.5/weather?q="+city+"&units=metric&appid=1097e7790d09472fcbbc6b813f92b183", true);
                 xmlhttp.send();
                 });
             </script>
