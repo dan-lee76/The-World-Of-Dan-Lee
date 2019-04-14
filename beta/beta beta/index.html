@@ -29,9 +29,18 @@
         </div>
         <h1 class="text-shadow-pop-br cen centre">Dan Lee</h1>
         <div class="text-focus-in centre">
+            <label id="lblGreetings"></label>
+            <br>
+            <br>
             Currently in <span id="weather-loca-name"></span> , <span id="weather-sts-country"></span> the weather is <span id="weather-desc"></span> <span id="weather-temp"></span>°C with a humidity of <span id="weather-hum"></span>% and a pressure of <span id="weather-pres"></span> hPa.<br> Wind speeds are at <span id="weather-win-spe"></span>mps blowing at <span id="weather-win-deg"></span>°.
         <p>TODO: https://codepen.io/victorfreire/pen/QywRNM </p>
         </div>
+                <div class="panel pink centre">
+              <button onclick="window.location.href='https://www.snapchat.com/add/dan-lee76'">Ghostface</button>
+              <button onclick="window.location.href='https://www.reddit.com/user/CheapInflation-Dusty'">Extraterrorestrial Alien</button>
+              <button onclick="window.location.href='https://github.com/dan-lee76'">A Fork</button>
+              <button onclick="window.location.href='mailto:danlee@graphic-designer.com?subject=Contact - DAN LEE&body=//Keep subject line for responce'">Electronic Mail</button>
+            </div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script>
             //$.getJSON('http://api.openweathermap.org/data/2.5/weather?q=wisbech&appid=1097e7790d09472fcbbc6b813f92b183').success(function(response){
@@ -180,5 +189,21 @@
   "retina_detect": true
 });
         </script>
-    
+    <script>
+    var myDate = new Date();
+    var hrs = myDate.getHours();
+
+    var greet;
+
+    if (hrs < 12)
+        greet = 'Good Morning';
+    else if (hrs >= 12 && hrs <= 17)
+        greet = 'Good Afternoon';
+    else if (hrs >= 17 && hrs <= 24)
+        greet = 'Good Evening';
+
+    document.getElementById('lblGreetings').innerHTML =
+        '<b>' + greet + '</b> my friend';
+</script> 
+    </body>
 </html>

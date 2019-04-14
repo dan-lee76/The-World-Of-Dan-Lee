@@ -1,3 +1,4 @@
+@import 'https://fonts.googleapis.com/css?family=Comfortaa:300,400,700&subset=cyrillic,cyrillic-ext,latin-ext';
 body {
     margin: 0;
     background-color: #17182f;
@@ -103,3 +104,41 @@ h1.cen{
  */
 .text-focus-in-2{-webkit-animation:text-focus-in .75s cubic-bezier(.55,.085,.68,.53) 1s both;animation:text-focus-in .75s cubic-bezier(.55,.085,.68,.53) 1s both}
 @-webkit-keyframes text-focus-in{0%{-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-filter:blur(0);filter:blur(0);opacity:1}}@keyframes text-focus-in{0%{-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-filter:blur(0);filter:blur(0);opacity:1}}
+/**
+ * ----------------------------------------
+ * buttons
+ * ----------------------------------------
+ */
+button {color:#454545;background:transparent;border-width:2px;border-style: solid;border-color: #454545;position:relative;margin:1em;display:inline-block;padding:0.5em 1em;transition:all 0.3s ease-in-out;text-align:center;
+font-family:comfortaa;font-weight:bold}
+button:before, button:after {content:'';
+    display:block;
+    position:absolute;
+    border-color:#454545;
+    box-sizing:border-box;
+    border-style:solid;
+    width:1em;
+    height:1em;
+    transition:all 0.3s ease-in-out}
+button:before {top:-6px;
+    left:-6px;
+    border-width:2px 0 0 2px;
+    z-index:5;}
+button:after {
+    bottom:-6px;
+    right:-6px;
+    border-width:0 2px 2px 0;}
+button:hover:before, button:hover:after {
+    width:calc(100% + 12px);
+    height:calc(100% + 12px);
+    border-color:#fff}
+button:hover {
+    color:#353535;
+    background-color:#fff;
+    border-color:#fff}
+
+.pink button {color:#eb1777;border-color:#eb1777}
+.pink button:before, .pink button:after  {border-color:#eb1777}
+.pink button:hover:before, .pink button:hover:after {border-color:#eb1777;}
+.pink button:hover {color:#fff;background-color:#eb1777;border-color:#eb1777;}
+.pink .panel {max-width:960px;text-align:center;position:relative;margin:auto;}
