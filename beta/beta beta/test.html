@@ -103,6 +103,7 @@ function showPosition(position) {
 function showError(error) {
   switch(error.code) {
     case error.PERMISSION_DENIED:
+          alert("TWAT");
       var IPlocation = "https://ip.nf/me.json";
             $.getJSON(IPlocation, function city(data) {
                 var city = data.ip.city;
@@ -139,49 +140,20 @@ function showError(error) {
             });
       break;
     case error.POSITION_UNAVAILABLE:
+          alert("TWAT");
       x.innerHTML = "Location information is unavailable."
       break;
     case error.TIMEOUT:
       x.innerHTML = "The request to get user location timed out."
       break;
     case error.UNKNOWN_ERROR:
-      var IPlocation = "https://ip.nf/me.json";
-            $.getJSON(IPlocation, function city(data) {
-                var city = data.ip.city;
-                var isp = data.ip.asn;
-                var lat = data.ip.latitude;
-                lat = lat.toString();
-                var long = data.ip.longitude;
-                long = long.toString();
-                document.getElementById("ip-isp").innerHTML = isp.substr(isp.indexOf(" ") + 1);
-                document.getElementById("ip-postal").innerHTML = data.ip.post_code;
-                document.getElementById("ip-ip").innerHTML = data.ip.ip;
-                document.getElementById("ip-lat").innerHTML = lat.slice(0, 5);
-                document.getElementById("ip-long").innerHTML = long.slice(0, 5);
-            
-                var xmlhttp = new XMLHttpRequest();
-                xmlhttp.onreadystatechange = function() {
-                  if (this.readyState == 4 && this.status == 200) {
-                    var myObj = JSON.parse(this.responseText);
-                      document.getElementById("weather-desc").innerHTML = myObj.weather[0].description;
-                      document.getElementById("weather-temp").innerHTML = myObj.main.temp;
-                      document.getElementById("weather-loca-name").innerHTML = myObj.name;
-                      document.getElementById("weather-pres").innerHTML = myObj.main.pressure;
-                      document.getElementById("weather-hum").innerHTML = myObj.main.humidity;
-                      document.getElementById("weather-win-spe").innerHTML = myObj.wind.speed;
-                      document.getElementById("weather-win-deg").innerHTML = myObj.wind.deg;
-                      document.getElementById("weather-sts-country").innerHTML = myObj.sys.country;
-                      
-                      
-                  }
-                };
-                
-                xmlhttp.open("GET", "https://api.openweathermap.org/data/2.5/weather?lat="+lat+"&lon="+long+"&units=metric&appid=1097e7790d09472fcbbc6b813f92b183", true);
-                xmlhttp.send();
-            });
-      break;
-  }
-}
+          alert("TWAT");
+          
+          
+          
+          
+          
+          
             getLocation();
             </script>
         <script>
