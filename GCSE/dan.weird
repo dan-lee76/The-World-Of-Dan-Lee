@@ -1,3 +1,6 @@
-function myFunction() {
-  alert("Hello! I am an alert box!");
+function leDonald() {
+  alert("0800");
+}
+function 0800() {
+  alert("GCES");
 }
