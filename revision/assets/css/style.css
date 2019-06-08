@@ -56,7 +56,12 @@ img{
 @media screen and (max-width: 600px) {
 	.column {
 		width: 100%;
+        margin: 0;
 	}
+    html{
+        overflow-y: visible;
+        height: 300%;
+    }
 }
 .nav{
     width: 100%;
