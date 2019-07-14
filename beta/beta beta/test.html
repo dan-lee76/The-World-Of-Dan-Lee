@@ -40,7 +40,7 @@
               <button class="slide-in-bottom-2"o nclick="window.location.href='https://www.reddit.com/user/CheapInflation-Dusty'">Extraterrorestrial Alien</button>
               <button class="slide-in-bottom-3" onclick="window.location.href='https://github.com/dan-lee76'">A Fork</button>
               <button class="slide-in-bottom-4" onclick="window.location.href='mailto:danlee@graphic-designer.com?subject=Contact - DAN LEE&body=//Keep subject line for responce'">Electronic Mail</button>
-                    <p id="noooo">hi</p>
+                    <p id="noooo">Version 0.0.9</p>
             </div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script>
@@ -48,73 +48,18 @@
             // Process response data;
             //document.getElementById("weather-desc").innerHTML = original.substr(original.indexOf(" ") + 1);
         </script>
-        <script>
-var x = document.getElementById("noooo");
-
-function getLocation() {
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(showPosition, showError);
-  } else { 
-    x.innerHTML = "Get a better browser";
-  };
-}//Do if statment
-
-function showPosition(position) {
-  x.innerHTML = "Latitude: " + position.coords.latitude + 
-  "<br>Longitude: " + position.coords.longitude;
-
-            
-            var IPlocation = "https://ip.nf/me.json";
+                <script>
+            var IPlocation = "https://geo.ipify.org/api/v1?apiKey=at_FVI4Fkx3HauSCgbmx5ffZq3TN1jcs";
             $.getJSON(IPlocation, function city(data) {
-                var city = data.ip.city;
+                var city = data.city;
                 var isp = data.ip.asn;
-                var lat = position.coords.latitude;
+                var lat = data.location.lat;
                 lat = lat.toString();
-                var long = position.coords.longitude;
-                long = long.toString();
-                document.getElementById("ip-isp").innerHTML = isp.substr(isp.indexOf(" ") + 1);
-                document.getElementById("ip-postal").innerHTML = data.ip.post_code;
-                document.getElementById("ip-ip").innerHTML = data.ip.ip;
-                document.getElementById("ip-lat").innerHTML = lat.slice(0, 5);
-                document.getElementById("ip-long").innerHTML = long.slice(0, 5);
-            
-                var xmlhttp = new XMLHttpRequest();
-                xmlhttp.onreadystatechange = function() {
-                  if (this.readyState == 4 && this.status == 200) {
-                    var myObj = JSON.parse(this.responseText);
-                      document.getElementById("weather-desc").innerHTML = myObj.weather[0].description;
-                      document.getElementById("weather-temp").innerHTML = myObj.main.temp;
-                      document.getElementById("weather-loca-name").innerHTML = myObj.name;
-                      document.getElementById("weather-pres").innerHTML = myObj.main.pressure;
-                      document.getElementById("weather-hum").innerHTML = myObj.main.humidity;
-                      document.getElementById("weather-win-spe").innerHTML = myObj.wind.speed;
-                      document.getElementById("weather-win-deg").innerHTML = myObj.wind.deg;
-                      document.getElementById("weather-sts-country").innerHTML = myObj.sys.country;
-                      
-                      
-                  }
-                };
-                
-                xmlhttp.open("GET", "https://api.openweathermap.org/data/2.5/weather?lat="+lat+"&lon="+long+"&units=metric&appid=1097e7790d09472fcbbc6b813f92b183", true);
-                xmlhttp.send();
-            
-            });
-}
-function showError(error) {
-  switch(error.code) {
-    case error.PERMISSION_DENIED:
-          alert("TWAT");
-      var IPlocation = "https://ip.nf/me.json";
-            $.getJSON(IPlocation, function city(data) {
-                var city = data.ip.city;
-                var isp = data.ip.asn;
-                var lat = data.ip.latitude;
-                lat = lat.toString();
-                var long = data.ip.longitude;
-                long = long.toString();
-                document.getElementById("ip-isp").innerHTML = isp.substr(isp.indexOf(" ") + 1);
-                document.getElementById("ip-postal").innerHTML = data.ip.post_code;
-                document.getElementById("ip-ip").innerHTML = data.ip.ip;
+                var long = data.location.lng;
+               long = long.toString();
+               // document.getElementById("ip-isp").innerHTML = isp.substr(isp.indexOf(" ") + 1);
+                document.getElementById("ip-postal").innerHTML = data.location.postalCode;
+                document.getElementById("ip-ip").innerHTML = data.ip;
                 document.getElementById("ip-lat").innerHTML = lat.slice(0, 5);
                 document.getElementById("ip-long").innerHTML = long.slice(0, 5);
             
@@ -138,24 +83,7 @@ function showError(error) {
                 xmlhttp.open("GET", "https://api.openweathermap.org/data/2.5/weather?lat="+lat+"&lon="+long+"&units=metric&appid=1097e7790d09472fcbbc6b813f92b183", true);
                 xmlhttp.send();
             });
-      break;
-    case error.POSITION_UNAVAILABLE:
-          alert("TWAT");
-      x.innerHTML = "Location information is unavailable."
-      break;
-    case error.TIMEOUT:
-      x.innerHTML = "The request to get user location timed out."
-      break;
-    case error.UNKNOWN_ERROR:
-          alert("TWAT");
-          
-          
-          
-          
-          
-          
-            getLocation();
-            </script>
+        </script>
         <script>
         particlesJS("particles-js", {
   "particles": {
