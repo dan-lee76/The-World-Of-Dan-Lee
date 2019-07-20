@@ -20,11 +20,11 @@
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
         <div class="bar">
             <div class="text-focus-in-2">
-            ｜Internet Service Provider: <span class="ipin" id="ip-isp"></span>
+            <p>｜Internet Service Provider: <span class="ipin" id="ip-isp"></span>
             ｜Postcode: <span class="ipin" id="ip-postal"></span>
             ｜IP: <span class="ipin" id="ip-ip"></span>
             ｜Latitude: <span class="ipin" id="ip-lat"></span>
-            ｜Longitude: <span class="ipin" id="ip-long"></span>｜
+            ｜Longitude: <span class="ipin" id="ip-long"></span>｜</p>
             </div>  
         </div>
         <h1 class="text-shadow-pop-br cen centre">Dan Lee</h1>
@@ -32,15 +32,15 @@
             <label id="lblGreetings"></label>
             <br>
             <br>
-            Currently in <span id="weather-loca-name"></span> , <span id="weather-sts-country"></span> the weather is <span id="weather-desc"></span> <span id="weather-temp"></span>°C with a humidity of <span id="weather-hum"></span>% and a pressure of <span id="weather-pres"></span> hPa.<br> Wind speeds are at <span id="weather-win-spe"></span>mps blowing at <span id="weather-win-deg"></span>°.
-        <p>TODO: Menu </p>
+            <p>Currently in <span id="weather-loca-name"></span> , <span id="weather-sts-country"></span> the weather is <span id="weather-desc"></span> <span id="weather-temp"></span>°C with a humidity of <span id="weather-hum"></span>% and a pressure of <span id="weather-pres"></span> hPa.<br> Wind speeds are at <span id="weather-win-spe"></span>mps blowing at <span id="weather-win-deg"></span>°.</p>
+        <p>TODO: Menu, font and everything else </p>
         </div>
                 <div class="panel pink centre">
               <button class="slide-in-bottom-1" onclick="window.location.href='https://www.snapchat.com/add/dan-lee76'">Ghostface</button>
               <button class="slide-in-bottom-2"o nclick="window.location.href='https://www.reddit.com/user/CheapInflation-Dusty'">Extraterrorestrial Alien</button>
               <button class="slide-in-bottom-3" onclick="window.location.href='https://github.com/dan-lee76'">A Fork</button>
               <button class="slide-in-bottom-4" onclick="window.location.href='mailto:danlee@graphic-designer.com?subject=Contact - DAN LEE&body=//Keep subject line for responce'">Electronic Mail</button>
-                    <p id="noooo">Version 0.0.9</p>
+                    <p id="noooo">Version 0.1.1</p>
             </div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script>
@@ -48,169 +48,7 @@
             // Process response data;
             //document.getElementById("weather-desc").innerHTML = original.substr(original.indexOf(" ") + 1);
         </script>
-                <script>
-            var IPlocation = "https://geo.ipify.org/api/v1?apiKey=at_FVI4Fkx3HauSCgbmx5ffZq3TN1jcs";
-            $.getJSON(IPlocation, function city(data) {
-                var city = data.city;
-                var isp = data.ip.asn;
-                var lat = data.location.lat;
-                lat = lat.toString();
-                var long = data.location.lng;
-               long = long.toString();
-               // document.getElementById("ip-isp").innerHTML = isp.substr(isp.indexOf(" ") + 1);
-                document.getElementById("ip-postal").innerHTML = data.location.postalCode;
-                document.getElementById("ip-ip").innerHTML = data.ip;
-                document.getElementById("ip-lat").innerHTML = lat.slice(0, 5);
-                document.getElementById("ip-long").innerHTML = long.slice(0, 5);
-            
-                var xmlhttp = new XMLHttpRequest();
-                xmlhttp.onreadystatechange = function() {
-                  if (this.readyState == 4 && this.status == 200) {
-                    var myObj = JSON.parse(this.responseText);
-                      document.getElementById("weather-desc").innerHTML = myObj.weather[0].description;
-                      document.getElementById("weather-temp").innerHTML = myObj.main.temp;
-                      document.getElementById("weather-loca-name").innerHTML = myObj.name;
-                      document.getElementById("weather-pres").innerHTML = myObj.main.pressure;
-                      document.getElementById("weather-hum").innerHTML = myObj.main.humidity;
-                      document.getElementById("weather-win-spe").innerHTML = myObj.wind.speed;
-                      document.getElementById("weather-win-deg").innerHTML = myObj.wind.deg;
-                      document.getElementById("weather-sts-country").innerHTML = myObj.sys.country;
-                      
-                      
-                  }
-                };
-                
-                xmlhttp.open("GET", "https://api.openweathermap.org/data/2.5/weather?lat="+lat+"&lon="+long+"&units=metric&appid=1097e7790d09472fcbbc6b813f92b183", true);
-                xmlhttp.send();
-            });
-        </script>
-        <script>
-        particlesJS("particles-js", {
-  "particles": {
-    "number": {
-      "value": 355,
-      "density": {
-        "enable": true,
-        "value_area": 789.1476416322727
-      }
-    },
-    "color": {
-      "value": "#ffffff"
-    },
-    "shape": {
-      "type": "circle",
-      "stroke": {
-        "width": 0,
-        "color": "#000000"
-      },
-      "polygon": {
-        "nb_sides": 5
-      },
-      "image": {
-        "src": "img/github.svg",
-        "width": 100,
-        "height": 100
-      }
-    },
-    "opacity": {
-      "value": 0.48927153781200905,
-      "random": false,
-      "anim": {
-        "enable": true,
-        "speed": 0.2,
-        "opacity_min": 0,
-        "sync": false
-      }
-    },
-    "size": {
-      "value": 2,
-      "random": true,
-      "anim": {
-        "enable": true,
-        "speed": 2,
-        "size_min": 0,
-        "sync": false
-      }
-    },
-    "line_linked": {
-      "enable": false,
-      "distance": 150,
-      "color": "#ffffff",
-      "opacity": 0.4,
-      "width": 1
-    },
-    "move": {
-      "enable": true,
-      "speed": 0.2,
-      "direction": "none",
-      "random": true,
-      "straight": false,
-      "out_mode": "out",
-      "bounce": false,
-      "attract": {
-        "enable": false,
-        "rotateX": 600,
-        "rotateY": 1200
-      }
-    }
-  },
-  "interactivity": {
-    "detect_on": "canvas",
-    "events": {
-      "onhover": {
-        "enable": true,
-        "mode": "bubble"
-      },
-      "onclick": {
-        "enable": true,
-        "mode": "push"
-      },
-      "resize": true
-    },
-    "modes": {
-      "grab": {
-        "distance": 400,
-        "line_linked": {
-          "opacity": 1
-        }
-      },
-      "bubble": {
-        "distance": 83.91608391608392,
-        "size": 1,
-        "duration": 3,
-        "opacity": 1,
-        "speed": 3
-      },
-      "repulse": {
-        "distance": 200,
-        "duration": 0.4
-      },
-      "push": {
-        "particles_nb": 4
-      },
-      "remove": {
-        "particles_nb": 2
-      }
-    }
-  },
-  "retina_detect": true
-});
-        </script>
-    <script>
-    var myDate = new Date();
-    var hrs = myDate.getHours();
-
-    var greet;
-
-    if (hrs < 12)
-        greet = 'Good Morning';
-    else if (hrs >= 12 && hrs <= 17)
-        greet = 'Good Afternoon';
-    else if (hrs >= 17 && hrs <= 24)
-        greet = 'Good Evening';
-
-    document.getElementById('lblGreetings').innerHTML =
-        '<b>' + greet + '</b> my friend.';
-</script> 
+        <script src="assets/js/apis.js"></script>
+        <script src="assets/js/bg.js"></script>
     </body>
 </html>

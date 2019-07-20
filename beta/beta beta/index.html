@@ -48,7 +48,7 @@
             //document.getElementById("weather-desc").innerHTML = original.substr(original.indexOf(" ") + 1);
         </script>
         <script>
-            var IPlocation = "https://ip.nf/me.json";
+            var IPlocation = "http://ip-api.com/json/";
             $.getJSON(IPlocation, function city(data) {
                 var city = data.ip.city;
                 var isp = data.ip.asn;
