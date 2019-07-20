@@ -33,13 +33,7 @@ var IPlocation = "https://geo.ipify.org/api/v1?apiKey=at_FVI4Fkx3HauSCgbmx5ffZq3
                     
                 xmlhttp.open("GET", "https://api.openweathermap.org/data/2.5/weather?lat="+lat+"&lon="+long+"&units=metric&appid=1097e7790d09472fcbbc6b813f92b183", true);
                 xmlhttp.send();
-            });
-                var IPlocationAsn = "http://ip-api.com/json/";
-                $.getJSON(IPlocationAsn, function city(ispdata) {
-                    document.getElementById("ip-isp").innerHTML = ispdata.isp;   
-                    });
-
-// Greating 
+                // Greating 
 var myDate = new Date();
     var hrs = myDate.getHours();
 
@@ -49,8 +43,15 @@ var myDate = new Date();
         greet = 'Good Morning';
     else if (hrs >= 12 && hrs <= 17)
         greet = 'Good Afternoon';
-    else if (hrs >= 17 && hrs <= 24)
+    else if (hrs >= 17 && hrs <= 20)
         greet = 'Good Evening';
+    else if (hrs >= 21 && hrs <= 24)
+        greet = 'Goodnight';
 
     document.getElementById('lblGreetings').innerHTML =
-        '<b>' + greet + '</b> my friend.';
+        '<b>' + greet + ', ' + data.ip;
+            });
+                var IPlocationAsn = "http://ip-api.com/json/";
+                $.getJSON(IPlocationAsn, function city(ispdata) {
+                    document.getElementById("ip-isp").innerHTML = ispdata.isp;   
+                    });
