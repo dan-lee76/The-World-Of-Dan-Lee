@@ -1,50 +1,90 @@
-<html>
+<!DOCTYPE html>
+<html lang="en" class="no-js">
 	<head>
-		<title>Dan Lee</title>
-		<meta charset="utf-8" />
-        <link rel="stylesheet" href="assets/cs/stylesheet.css" />
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title>Dan Lee | Home</title>
+		<meta name="description" content="Page Preloading Effect: Re-creating the effect seen on fontface.ninja" />
+		<meta name="keywords" content="page loading, effect, initial, logo, sliding, web design, css animation, transform" />
+		<meta name="author" content="Dan Lee" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="assets/css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="assets/css/animation-stylesheet.css" />
+		<link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css" />
+		<script src="assets/js/modernizr.custom.js"></script>
 	</head>
-    <body>
-    <div id="main-container" class="main-container">
-        <header class="main-header">
-            
-            <h1 class="main-logo">
-            <svg class="main-inner" width="100%" height="100%" viewBox="0 0 300 160" preserveAspectRatio="xMidYMin meet" aria-labelledby="logo_title">
-                <title id="logo_title">Dan Lee</title>
-                <path d="M150 0 L75 200 L225 200 Z" />
-                </svg>
-            </h1>
-        
-            <div class="loader">
-            <svg class="main-inner" width="60px" height="60px" viewBox="0 0 80 80">
-                <path class="loader-circlebg" d="M40,10C57.351,10,71,23.649,71,40.5S57.351,71,40.5,71 S10,57.351,10,40.5S23.649,10,40.5,10z"/>
-				<path id="loader-circle" class="ip-loader-circle" d="M40,10C57.351,10,71,23.649,71,40.5S57.351,71,40.5,71 S10,57.351,10,40.5S23.649,10,40.5,10z"/>
-                </svg>
-            </div>
-        </header>
-        
-        <div class="main-page">
-            <h2>Jesus Christ, Its Dan Lee</h2>
-            <div class="browser clearfix">
-                <div class="box">
-                    <span class="icon-bell"></span>
-                    <p>...</p>
-                </div>
-                <div class="box">
-                    <span class="icon-heart"></span>
-                    <p>...</p>
-                </div>
-                <div class="box">
-                    <span class="icon-cog"></span>
-                    <p>...</p>
+	<body class="demo-2">
+		<div id="ip-container" class="ip-container">
+			<!-- initial header -->
+			<header class="ip-header">
+				<h1 class="ip-logo">
+					<svg class="ip-inner" width="100%" height="100%" viewBox="50 0 290 290" preserveAspectRatio="xMidYMin meet" aria-labelledby="logo_title">
+						<title id="logo_title">Dan Lee</title>
+                        <path d="M8.69,213A1.51,1.51,0,0,1,7,211.29V39.66A1.51,1.51,0,0,1,8.69,38h53.1a87.18,87.18,0,0,1,33.82,6.71A86.09,86.09,0,0,1,123.2,63.1a87.33,87.33,0,0,1,18.92,27.34,86.32,86.32,0,0,1,7.2,33.45,84.3,84.3,0,0,1-6.59,34.66A88.89,88.89,0,0,1,95,205.92,87.52,87.52,0,0,1,60.33,213Zm9.89-11.6H61.79a75.48,75.48,0,0,0,53.71-22.22A73.66,73.66,0,0,0,131.86,155a76,76,0,0,0,0-59.08A73.86,73.86,0,0,0,115.5,71.76a76.74,76.74,0,0,0-24-16.35,75.45,75.45,0,0,0-29.67-6H18.58ZM257.18,213a1.51,1.51,0,0,1-1.71-1.71V39.41c0-1,.57-1.58,1.71-1.58h8.18c1.14,0,1.71.53,1.71,1.58v162H349a1.51,1.51,0,0,1,1.71,1.71v8.18A1.51,1.51,0,0,1,349,213ZM192.35,239.89a1.94,1.94,0,0,1-2.2-2.2V8.3c0-1.57.73-2.35,2.2-2.35h11c1.47,0,2.2.78,2.2,2.35V237.69a1.94,1.94,0,0,1-2.2,2.2Z"/>
+                    </svg>
+				</h1>
+				<div class="ip-loader">
+					<svg class="ip-inner" width="60px" height="60px" viewBox="0 0 80 80">
+						<path class="ip-loader-circlebg" d="M40,10C57.351,10,71,23.649,71,40.5S57.351,71,40.5,71 S10,57.351,10,40.5S23.649,10,40.5,10z"/>
+						<path id="ip-loader-circle" class="ip-loader-circle" d="M40,10C57.351,10,71,23.649,71,40.5S57.351,71,40.5,71 S10,57.351,10,40.5S23.649,10,40.5,10z"/>
+					</svg>
+				</div>
+			</header>
+			<!-- top bar -->
+			<div class="codrops-top clearfix">
+				<a class="codrops-icon codrops-icon-prev" href="http://tympanus.net/Development/FullscreenForm/"><span>Previous Demo</span></a>
+				<span class="right"><a class="codrops-icon codrops-icon-drop" href="http://tympanus.net/codrops/?p=19535"><span>Back to the Codrops Article</span></a></span>
 			</div>
-		</div>
-            
-        </div>
-        </div>
-    
-    <script src="assets/js/classie.js"></script>
-        <script src="assets/js/main.js"></script>
-        <script src="assets/js/modernizr.custom.js"></script>
-        <script src="assets/js/pathLoader.js"></script>
-    </body>
+			<!-- main content -->
+			<div class="ip-main">
+				<nav class="links">
+					<a href="index.html">Link 1</a>
+					<a class="links-current" href="index2.html">Link 2</a>
+				</nav>
+				<h2 id="ran-message">Your privacy is important!</h2>
+				<div class="browser clearfix">
+					<div class="box">
+						<span class="icon-bell"></span>
+						<p>Do Re Mi What Fa Si Ti Doi Nemo Do Re Mi What Fa Si Ti Doi Nemo</p>
+					</div>
+					<div class="box">
+						<span class="icon-heart"></span>
+						<p>E La Yo Na Ti Do Pa Pa Noah Do Re Mi What Fa Si Ti Doi Nemo</p>
+					</div>
+					<div class="box">
+						<span class="icon-cog"></span>
+						<p>No way! Hey Hey, me ok! Do Re Mi What Fa Si Ti Doi Nemo</p>
+					</div>
+				</div>
+                <p>｜Internet Service Provider: <span class="ipin" id="ip-isp"></span>
+            ｜Postcode: <span class="ipin" id="ip-postal"></span>
+            ｜IP: <span class="ipin" id="ip-ip"></span>
+            ｜Latitude: <span class="ipin" id="ip-lat"></span>
+            ｜Longitude: <span class="ipin" id="ip-long"></span>｜</p>
+				<!-- related demos -->
+				<section class="related">
+					<p>If you enjoyed this demo you might also like:</p>
+					<a href="http://tympanus.net/Development/HeaderEffects/">
+						<img src="img/relatedposts/HeaderEffects.jpg" alt="Header Effects"/>
+						<h3>On-Scroll Header Effects</h3>
+					</a>
+					<a href="http://tympanus.net/Development/ArticleIntroEffects/">
+						<img src="img/relatedposts/ArticleIntroEffects.png" alt="Article Intro Effects" />
+						<h3>Article Intro Effects</h3>
+					</a>
+				</section>
+			</div>
+		</div><!-- /container -->
+		<script src="assets/js/classie.js"></script>
+		<script src="assets/js/pathLoader.js"></script>
+		<script src="assets/js/main.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="assets/js/apis.js"></script>
+        <script>
+        const messages = ['Your privacy matters!', 'Stop accepting things.', "You should read t&c's more often.", "Its 'free'."];
+            const randomIndex = Math.round(Math.random()*messages.length);
+            document.getElementById("ran-message").innerHTML = messages[randomIndex];
+        </script>
+	</body>
+</html>

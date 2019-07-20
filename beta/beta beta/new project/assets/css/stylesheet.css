@@ -111,13 +111,13 @@ section {
 }
 
 /* Demo Buttons Style */
-.codrops-demos {
+.links {
 	padding: 2em 0 1em;
 	font-size: 0.8em;
 	text-align: center;
 }
 
-.codrops-demos a {
+.links a {
 	display: inline-block;
 	margin: 0.5em 0.75em;
 	line-height: 1.5;
@@ -128,7 +128,7 @@ section {
 	font-weight: 700;
 }
 
-.codrops-demos a.current-demo {
+.links a.links-current {
 	color: inherit;
 }
 
