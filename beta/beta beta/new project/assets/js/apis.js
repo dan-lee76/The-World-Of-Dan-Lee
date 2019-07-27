@@ -55,3 +55,37 @@ var myDate = new Date();
                 $.getJSON(IPlocationAsn, function city(ispdata) {
                     document.getElementById("ip-isp").innerHTML = ispdata.isp;   
                     });
+
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+function myClick() {
+  setTimeout(
+    function() {
+      modal.style.display = "block";
+    }, 5000);
+}
+myClick();
+
+// When the user clicks on <div>, open the popup
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}

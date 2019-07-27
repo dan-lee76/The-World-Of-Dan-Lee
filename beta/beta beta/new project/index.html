@@ -14,7 +14,7 @@
 		<link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css" />
 		<script src="assets/js/modernizr.custom.js"></script>
 	</head>
-	<body class="demo-2">
+	<body class="main">
 		<div id="ip-container" class="ip-container">
 			<!-- initial header -->
 			<header class="ip-header">
@@ -33,14 +33,14 @@
 			</header>
 			<!-- top bar -->
 			<div class="codrops-top clearfix">
-				<a class="" href="http://tympanus.net/Development/FullscreenForm/"><span>Blog</span></a>
-				<span class="right"><a  href="https://github.com/dan-lee76"><span>Fork Me</span></a></span>
+				<a class="codrops-icon codrops-icon-prev" href="http://tympanus.net/Development/FullscreenForm/"><span>Previous Demo</span></a>
+				<span class="right"><a class="codrops-icon codrops-icon-drop" href="http://tympanus.net/codrops/?p=19535"><span>View Source Code</span></a></span>
 			</div>
 			<!-- main content -->
 			<div class="ip-main">
 				<nav class="links">
-					<a class="links-current" href="index.html">Home</a>
-					<a href="index2.html">Destination 2</a>
+					<a href="index.html">Link 1</a>
+					<a class="links-current" href="index2.html">Link 2</a>
 				</nav>
 				<h2 id="lblGreetings"></h2>
 				<div class="browser clearfix">
@@ -66,16 +66,36 @@
 				<!-- related demos -->
 				<section class="related">
 					<p>If you enjoyed this demo you might also like:</p>
-					<a href="">
+					<a href="http://tympanus.net/Development/HeaderEffects/">
 						<img src="img/relatedposts/HeaderEffects.jpg" alt="Header Effects"/>
 						<h3>On-Scroll Header Effects</h3>
 					</a>
-					<a href="">
+					<a href="http://tympanus.net/Development/ArticleIntroEffects/">
 						<img src="img/relatedposts/ArticleIntroEffects.png" alt="Article Intro Effects" />
 						<h3>Article Intro Effects</h3>
 					</a>
 				</section>
-			</div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+  <div class="modal-header">
+    <span class="close">&times;</span>
+    <h1>Dan's Usage Policy</h1>
+  </div>
+  <div class="modal-body">
+    <p>By using this site, you agree to its <a href="terms/terms.html">terms and conditions</a> and other providers <a href="url">privacy policy</a>.</p>
+    <p>For a better expiriance please disable adblocker and to allow scripts. (It creates some pretty cool stuff)</p>
+  </div>
+  <div class="modal-footer">
+    <h3>Message to Dan: Create a popup style at top which doesnt effect the whole page!</h3>
+  </div>
+</div>
+
+</div>
+            </div>
 		</div><!-- /container -->
 		<script src="assets/js/classie.js"></script>
 		<script src="assets/js/pathLoader.js"></script>
