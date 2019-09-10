@@ -12,9 +12,16 @@
 		<link rel="stylesheet" type="text/css" href="assets/css/normalize.css" />
 		<link rel="stylesheet" type="text/css" href="assets/css/animation-stylesheet.css" />
 		<link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css" />
+        <link rel="stylesheet" type="text/css" href="assets/css/ns-style-bar.css" />
 		<script src="assets/js/modernizr.custom.js"></script>
 	</head>
 	<body class="main">
+        <div class="ns-box ns-growl ns-effect-slide ns-type-notice ns-show">
+	<div class="ns-box-inner">
+		<p>This is a message</p>
+	</div>
+	<span class="ns-close"></span>
+</div>
 		<div id="ip-container" class="ip-container">
 			<!-- initial header -->
 			<header class="ip-header">
@@ -74,34 +81,17 @@
 						<img src="img/relatedposts/ArticleIntroEffects.png" alt="Article Intro Effects" />
 						<h3>Article Intro Effects</h3>
 					</a>
-				</section>
-
-<!-- The Modal -->
-<div id="myModal" class="modal">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-  <div class="modal-header">
-    <span class="close">&times;</span>
-    <h1>Dan's Usage Policy</h1>
-  </div>
-  <div class="modal-body">
-    <p>By using this site, you agree to its <a href="terms/terms.html">terms and conditions</a> and other providers <a href="url">privacy policy</a>.</p>
-    <p>For a better expiriance please disable adblocker and to allow scripts. (It creates some pretty cool stuff)</p>
-  </div>
-  <div class="modal-footer">
-    <h3>Message to Dan: Create a popup style at top which doesnt effect the whole page!</h3>
-  </div>
-</div>
+				</section>		
 
 </div>
             </div>
-		</div><!-- /container -->
+		<!-- /container -->
 		<script src="assets/js/classie.js"></script>
 		<script src="assets/js/pathLoader.js"></script>
 		<script src="assets/js/main.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="assets/js/apis.js"></script>
+        <script src="assets/js/notificationFx.js"></script>
         <script>
         const messages = ['Your privacy matters!', 'Stop accepting things.', "You should read t&c's more often.", "Its 'free'."];
             const randomIndex = Math.round(Math.random()*messages.length);

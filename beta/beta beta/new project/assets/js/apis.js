@@ -80,7 +80,44 @@ function myClick() {
   setTimeout(
     function() {
       modal.style.display = "block";
+        notification.show();
     }, 5000);
 }
 myClick();
 
+// create the notification
+var notification = new NotificationFx({
+
+	// element to which the notification will be appended
+	// defaults to the document.body
+	wrapper : document.body,
+
+	// the message
+	message : '<p>This is a message</p>',
+
+	// layout type: growl|attached|bar|other
+	layout : 'growl',
+
+	// effects for the specified layout:
+	// for growl layout: scale|slide|genie|jelly
+	// for attached layout: flip|bouncyflip
+	// for other layout: boxspinner|cornerexpand|loadingcircle|thumbslider
+	// ...
+	effect : 'slide',
+
+	// notice, warning, error, success
+	// will add class ns-type-warning, ns-type-error or ns-type-success
+	type : 'notice',
+
+	// if the user doesn´t close the notification then we remove it 
+	// after the following time
+	ttl : 6000,
+
+	// callbacks
+	onClose : function() { return false; },
+	onOpen : function() { return false; }
+
+});
+
+// show the notification
+notification.show();
