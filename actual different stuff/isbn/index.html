@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>ISBN</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+        <link rel="stylesheet" href="assets/css/stylesheet.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+    <body>
+        <input type="text" id="isbn_input">
+        <button onclick="isbn_validator()">Submit</button>
+        <p id="output"></p>
+        
+        <script>
+            function isbn_validator(){
+                var sum = 0;
+                var isbn = Array.from((document.getElementById("isbn_input").value).split(""));
+                document.getElementById("output").innerHTML = isbn;
+                console.log(isbn)
+                
+                if (isbn.length != 10){
+                    document.getElementById("output").innerHTML = "Length of ISBN is not 10 charachetrs long";
+                }
+                else if(isbn[9]== "x"){
+                    isbn[9] = "10";
+                }
+                else if(!isbn.some(isNaN) != true){
+                    document.getElementById("output").innerHTML = "You have entered a unrecognised character";
+                }
+                else{
+                    var jesus = isbn.valueOf();
+                    console.log(jesus)
+                    var arrSum = isbn.reduce(myFunc);
+                    console.log(arrSum);
+                }
+            }
+            function myFunc(total, num) {
+              return total + num;
+            }
+        </script>
+    
+    </body>
+</html>
