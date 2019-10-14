@@ -1,116 +1,24 @@
-<!DOCTYPE HTML>
+﻿<!DOCTYPE HTML>
 <html>
 	<head>
 		<title>ISBN</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+        <link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css" />
 	</head>
     <body>
-        <input type="text" id="isbn_input">
-        <button onclick="isbn_validator()">Submit</button>
-        <p id="output"></p>
-        
-        <script>
-            function isbn_validator(){
-                var isbn = Array.from(((document.getElementById("isbn_input").value).toLowerCase()).split(""));//Value = gets the value from button, split = splits each of the charachters up, toLowerCase = turns it into a lower case
-                document.getElementById("output").innerHTML = isbn;
-                console.log(isbn)
-                
-                if (isbn.length != 10){
-                    document.getElementById("output").innerHTML = "Length of ISBN is not 10 charachetrs long";
-                }
-                else if(isbn.includes("?")){
-                    isbnFinder(isbn);
-                }
-                else if(isbn[9]== "x"){
-                    isbn[9] = "10";
-                    calcISBN(isbn)
-                }
-                else if(!isbn.some(isNaN) != true){
-                    document.getElementById("output").innerHTML = "You have entered a unrecognised character";
-                }
-                else{
-                    calcISBN(isbn)
-                }
-            }
-            
-            function calcISBN(isbn) {
-                var sum = 0;
-                var isbnNumber = (isbn.map(Number)).valueOf();
-                console.log(isbnNumber);
-                sum = calc(isbnNumber);
-                //var arrSum = isbnNumber.reduce((a,b) => a+b,0);
-                var total = sum % 11;
-                console.log(total)
-                if (total != 0){
-                    document.getElementById("output").innerHTML = "ISBN is not valid";
-                }
-                else if (total == 0){
-                    document.getElementById("output").innerHTML = "ISBN VALID";
-                }
-            }
-            function calc(isbnNumber){
-                var sum = 0
-                for(i=0; i <isbnNumber.length; i++){
-                    if(isbnNumber[i] == '?'){
-                        continue
-                    }
-                    else if(isNaN(isbnNumber[i]) == true){//Somethins is wrong here
-                        isbnisNum = (isbnNumber[i].map(Number)).valueOf();
-                        console.log(isbnisNum)
-                        sum += isbnisNum * (10-i);
-                        console.log(sum)
-                    }
-                }
-                return sum
-            }
-            function isbnFinder(isbn) {
-                console.log('ping')
-                var r = 10
-                var qAmount = 0
-                var total = 0
-                for(i=0; i <isbn.length; i++){
-                    if(isbn[i] == "?"){
-                        qAmount += 1
-                    }
-                }
-                if(qAmount == 1){
-                    if(isbn[9]== "x"){
-                        isbn[9] = "10";
-                    }
-                    if(isbn.indexOf('?') == 9){
-                        r = 11
-                    }
-                    //look at python and reverse engenerr it
-                    //isbnNumber = (isbn.map(Number)).valueOf();
-                    sum = calc(isbn)
-                    for(j=1; j < r; j++){
-                        console.log(j)
-                        console.log(isbn.indexOf('?'))
-                        total=(((10-isbn.indexOf('?')) * (j)) + sum) % 11
-                        console.log(total)
-                        if(total != 0){
-                            continue
-                        }
-                        else if(j ==10){
-                            document.getElementById("output").innerHTML = "Missing digit is X";
-                            break
-                        }
-                        else{
-                            document.getElementById("output").innerHTML = "Missing digit is" + j;
-                            break
-                        }
-                    }
-                }
-                else if(qAmount > 1){
-                    document.getElementById("output").innerHTML = "You have entered too many '?'";
-                }
-                    
-            }
-        </script>
-    
-    </body>
+        <div class="center">
+            <h1>Dans Amazing ISBN Validator - 10 digit</h1>
+            <div id="namer">
+                <div id="namer-input">
+                    <input type="text" id="isbn_input" placeholder="Enter ISBN">
+                    </div>
+                </div>
+                    <button id="button" onclick="isbn_validator()" style="visibility: hidden;">Submit</button>
+                    <p id="output"></p>
+                </div>
+
+                <script src="assets/js/script.js"></script>
+
+</body>
 </html>
