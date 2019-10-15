@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+/* Style the header */
+body {
+  margin: 0;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+background: #f5f5f5;
+}
+.center {
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+}
+.center-hed {
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+}
+.header {
+  padding: 1px;
+  text-align: center;
+  background: #3473d8;
+  color: white;
+    position: relative;
+}
+/* Increase the font size of the h1 element */
+.header h1 {
+  font-size: 40px;
+    text-align: left;
+    padding-left: 10px;
+    position: absolute;
+}
+.header h3 {
+  font-size: 26px;
+    text-align: right;
+    padding-right: 10px;
+ 
+}
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.navbar-fixed {
+    top: 0;
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+}
+.dvider{
+    position: absolute;
+}
+.rightbody{
+    float: right;
+    width: 70%;
+    border: 3px solid #1C6EA4;
+    border-radius: 8px;
+    margin-right: 5%;
+    background: #fff;
+    position: relative;
+    padding: 0px 0px 0px 0px;
+}
+.leftbody{
+    float: left;
+    width: 15%;
+    background: #fff;
+    border: 3px solid #1C6EA4;
+    border-radius: 8px;
+    margin-left: 2.5%;
+    position: relative;
+        
+}
+.title{
+    background:#1C6EA4;
+    width: 100%;
+    color: white;
+    position: relative;
+    float: left;
+
+}
+.title h1{
+    font-size: 32px;
+    text-align: center;
+
+}
+.maincontent{
+    font-size: 12px;
+    padding: 100px 10px 10px 10px;
+}
+.maincontent h1{
+    font-size: 26px;
+}
+.maincontent p{
+    font-size: 18px;
+    text-align: left;
+
+}
+.wordart {
+  font-family: Arial, sans-serif;
+  font-size: 4.5vw;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+}
+.wordart.rainbow { /*Stolen*/
+  transform: scale(1, 1.5);
+  -webkit-transform: scale(1, 1.5);
+  -moz-transform: scale(1, 1.5);
+  -o-transform: scale(1, 1.5);
+  -ms-transform: scale(1, 1.5);
+}
+
+.wordart.rainbow .text {
+  background: red; 
+  background: -webkit-linear-gradient(left, #b306a9, #ef2667, #f42e2c, #ffa509, #fdfc00, #55ac2f, #0b13fd, #a804af);
+  background: -o-linear-gradient(left, #b306a9, #ef2667, #f42e2c, #ffa509, #fdfc00, #55ac2f, #0b13fd, #a804af);
+  background: -moz-linear-gradient(left, #b306a9, #ef2667, #f42e2c, #ffa509, #fdfc00, #55ac2f, #0b13fd, #a804af);
+  background: linear-gradient(to right, #b306a9, #ef2667, #f42e2c, #ffa509, #fdfc00, #55ac2f, #0b13fd, #a804af); 
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.wordartB.blues .text {
+    font-family: Impact, sans-serif;
+    color: #24c0fd;
+    -webkit-text-stroke: 0.01em #0000aa;
+    filter: progid:DXImageTransform.Microsoft.Glow(Color=#0000aa,Strength=1);
+    text-shadow: 0.13em -0.13em 0px #0000aa;
+    letter-spacing: -0.05em;
+}
+.wordartB {
+  font-family: Arial, sans-serif;
+  font-size: 7vw;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+}
