@@ -5,7 +5,7 @@
     <title>Developer MODE</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css">
     <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
     <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
     <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
@@ -21,14 +21,14 @@
 
 <body onload="startTime()">
     <div class="header">
-        <h1>Developer Land - DEVELOPMENT MODE WHICH DOES NOT WORK!</h1>
+        <h1>Developer Land - 0.0.0.1</h1>
         <h3>a Dan Lee site</h3>
     </div>
-    <div class="navbar">
+    <div class="navbar" id="nav_bar">
         <a href="index.html">Home</a>
-        <a href="fun.html">"Fun Stuff"</a>
+        <a href="Creation.html">Creations</a>
     </div>
-    <div class="center content">
+    <div class="center">
         <div class="wordart rainbow">
             <span class="text">Welcome to my AMAZING</span>
         </div>
@@ -43,7 +43,14 @@
             </div>
             <div class="maincontent">
                 <h1>Currently in <span id="weather-loca-name"></span> , <span id="weather-sts-country"></span> the weather is <span id="weather-desc"></span> <span id="weather-temp"></span>°C with a humidity of <span id="weather-hum"></span>% and a pressure of <span id="weather-pres"></span> hPa.<br> Wind speeds are at <span id="weather-win-spe"></span>mps blowing at <span id="weather-win-deg"></span>°.</h1>
-                <p>Welcome to my awful site which i have created.</p>
+                <h2>Latest NEWS:</h2>
+                <p id="ptext">Welcome to the FIRST realease of many updates to my wonderful!</p>
+                <ul id="ptext">
+                    <b>Current functions on Developer Land</b>
+                <li>Display some 'lovely' and very 'useful' information about your connection!</li>
+                <li>Tells you everything you need to know about the weather!</li>
+                <li>Litterally nothing else!</li></ul>
+                
             </div>
         </div>
         <div class="leftbody">
@@ -51,76 +58,16 @@
                 <h1>Current Info</h1>
             </div>
             <div class="maincontent">
-                <p>｜Time: <span class="ipin" id="time"></span></p>
-                <p>｜IP: <span class="ipin" id="ip-ip"></span></p>
-                <p>｜Internet Service Provider: <span class="ipin" id="ip-isp"></span></p>
-                <p>｜Postcode: <span class="ipin" id="ip-postal"></span></p>
-                <p>｜Latitude: <span class="ipin" id="ip-lat"></span></p>
-                <p>｜Longitude: <span class="ipin" id="ip-long"></span></p>
+                <p id="ptext">｜Time: <span class="ipin" id="time"></span></p>
+                <p id="ptext">｜IP: <span class="ipin" id="ip-ip">LET</span></p>
+                <p id="ptext">｜Postcode: <span class="ipin" id="ip-postal">ME</span></p>
+                <p id="ptext">｜Latitude: <span class="ipin" id="ip-lat">TRACK</span></p>
+                <p id="ptext">｜Longitude: <span class="ipin" id="ip-long">YOU!</span></p>
             </div>
         </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script>
-        //Ip and weather
-        //Ip and weather
-        var IPlocation = "https://geo.ipify.org/api/v1?apiKey=at_FVI4Fkx3HauSCgbmx5ffZq3TN1jcs";
-        $.getJSON(IPlocation, function city(data) {
-            var city = data.city;
-            var isp = data.ip.asn;
-            var lat = data.location.lat;
-            lat = lat.toString();
-            var long = data.location.lng;
-            long = long.toString();
-            // document.getElementById("ip-isp").innerHTML = isp.substr(isp.indexOf(" ") + 1);
-            document.getElementById("ip-postal").innerHTML = data.location.postalCode;
-            document.getElementById("ip-ip").innerHTML = data.ip;
-            document.getElementById("ip-lat").innerHTML = lat.slice(0, 5);
-            document.getElementById("ip-long").innerHTML = long.slice(0, 5);
-
-            var xmlhttp = new XMLHttpRequest();
-            xmlhttp.onreadystatechange = function() {
-                if (this.readyState == 4 && this.status == 200) {
-                    var myObj = JSON.parse(this.responseText);
-                    document.getElementById("weather-desc").innerHTML = myObj.weather[0].description;
-                    document.getElementById("weather-temp").innerHTML = myObj.main.temp;
-                    document.getElementById("weather-loca-name").innerHTML = myObj.name;
-                    document.getElementById("weather-pres").innerHTML = myObj.main.pressure;
-                    document.getElementById("weather-hum").innerHTML = myObj.main.humidity;
-                    document.getElementById("weather-win-spe").innerHTML = myObj.wind.speed;
-                    document.getElementById("weather-win-deg").innerHTML = myObj.wind.deg;
-                    document.getElementById("weather-sts-country").innerHTML = myObj.sys.country;
-
-                }
-            };
-
-            xmlhttp.open("GET", "https://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + long + "&units=metric&appid=1097e7790d09472fcbbc6b813f92b183", true);
-            xmlhttp.send();
-        });
-        var IPlocationAsn = "http://ip-api.com/json/";
-        $.getJSON(IPlocationAsn, function city(ispdata) {
-            document.getElementById("ip-isp").innerHTML = ispdata.isp;
-        });
-
-        function startTime() {
-            var today = new Date();
-            var h = today.getHours();
-            var m = today.getMinutes();
-            var s = today.getSeconds();
-            m = checkTime(m);
-            s = checkTime(s);
-            document.getElementById('time').innerHTML =
-                h + ":" + m + ":" + s;
-            var t = setTimeout(startTime, 500);
-        };
-
-        function checkTime(i) {
-            if (i < 10) {
-                i = "0" + i
-            }; // add zero in front of numbers < 10
-            return i;
-        };
-    </script>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
