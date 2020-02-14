@@ -1,0 +1,70 @@
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #3473d8;
+  color: white;
+}
+body {
+font-family:Calibri;
+background-color:#0099FF;
+align:center;
+}
+h1{
+color:white;
+text-align:center;
+font-size:48px;
+width:100%;
+}
+h2{
+color:white;
+text-align:center;
+font-size:36px;
+width:100%;
+}
+h3{
+color:white;
+text-align:center;
+font-size:30px;
+width:100%;
+}
+h4{
+color:white;
+text-align:center;
+font-size:26px;
+width:100%;
+}
+h5{
+color:white;
+text-align:center;
+font-size:12px;
+width:100%;
+}
+p{
+color:white;
+text-align:center;
+font-size:24px;
+width:100%;
+}
+li{
+color:white;
+font-size:24px;
+width:100%;
+}
+hr{
+color:white;
+float:center;
+width:50%;
+}
+table {
+magin-left:150px;
+width:170px;
+border-collapse:collapse;
+background-color:#0099FF;
+}
+tr {width:300px;
+}
+td {width:100px;
+border:4px dotted orange;
+}
+main{
+width:

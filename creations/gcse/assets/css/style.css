@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Archivo|Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Archivo&display=swap');
+html {
+	height: 100%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background: #70bg32;
+	background-repeat:no-repeat;
+	background: #9CECFB;
+	/* fallback for old browsers */
+	background: -webkit-linear-gradient(to top, #0052D4, #65C7F7, #9CECFB);
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to top, #0052D4, #65C7F7, #9CECFB);
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+div.polaroid {
+	width: 100%;
+	background-color: white;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	margin-bottom: 25px;
+	border-color: white;
+	border-width: 10px;
+	border-style: solid;
+    position: relative;
+}
+div.container {
+	text-align: center;
+	padding: 10px 20px;
+	font-family: 'Righteous', cursive;
+	color: black;
+	font-size: 100%;
+}
+img{
+	width: 100%;
+}
+* {
+	box-sizing: border-box;
+    margin: 0;
+}
+.column {
+	float: left;
+	width: 25%;
+	padding: 1%;
+}
+/* Clear floats after the columns */
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+@media screen and (max-width: 600px) {
+	.column {
+		width: 100%;
+        margin: 0;
+	}
+    html{
+        overflow-y: visible;
+        height: 300%;
+    }
+}
+.nav{
+    width: 100%;
+    padding: 3.5vh;
+    display: inline-block
+        
+}
+h1.logo{
+    color: white;
+    font-family: 'Archivo', sans-serif;
+    text-align: center;
+    font-size: calc(1em + 1vw);
+}
+.text{
+    color: white;
+    font-family: 'Archivo', sans-serif;
+    text-align: center;
+    font-size: calc(0.5em + 0.5vw);
+}
+.border {
+ border : 5px solid white;
+    padding: 10px;
+}
+/**
+ * ----------------------------------------
+ * animation roll-in-blurred-left
+ * ----------------------------------------
+ */
+.roll-in-blurred-left{-webkit-animation:roll-in-blurred-left .65s cubic-bezier(.23,1.000,.32,1.000) .2s both;animation:roll-in-blurred-left .65s cubic-bezier(.23,1.000,.32,1.000) .2s both}
+@-webkit-keyframes roll-in-blurred-left{0%{-webkit-transform:translateX(-1000px) rotate(-720deg);transform:translateX(-1000px) rotate(-720deg);-webkit-filter:blur(50px);filter:blur(50px);opacity:0}100%{-webkit-transform:translateX(0) rotate(0deg);transform:translateX(0) rotate(0deg);-webkit-filter:blur(0);filter:blur(0);opacity:1}}@keyframes roll-in-blurred-left{0%{-webkit-transform:translateX(-1000px) rotate(-720deg);transform:translateX(-1000px) rotate(-720deg);-webkit-filter:blur(50px);filter:blur(50px);opacity:0}100%{-webkit-transform:translateX(0) rotate(0deg);transform:translateX(0) rotate(0deg);-webkit-filter:blur(0);filter:blur(0);opacity:1}}
+.roll-in-blurred-right{-webkit-animation:roll-in-blurred-right .65s cubic-bezier(.23,1.000,.32,1.000) .2s both;animation:roll-in-blurred-right .65s cubic-bezier(.23,1.000,.32,1.000) .2s both}
+@-webkit-keyframes roll-in-blurred-right{0%{-webkit-transform:translateX(1000px) rotate(720deg);transform:translateX(1000px) rotate(720deg);-webkit-filter:blur(50px);filter:blur(50px);opacity:0}100%{-webkit-transform:translateX(0) rotate(0deg);transform:translateX(0) rotate(0deg);-webkit-filter:blur(0);filter:blur(0);opacity:1}}@keyframes roll-in-blurred-right{0%{-webkit-transform:translateX(1000px) rotate(720deg);transform:translateX(1000px) rotate(720deg);-webkit-filter:blur(50px);filter:blur(50px);opacity:0}100%{-webkit-transform:translateX(0) rotate(0deg);transform:translateX(0) rotate(0deg);-webkit-filter:blur(0);filter:blur(0);opacity:1}}
+.roll-in-blurred-bottom{-webkit-animation:roll-in-blurred-bottom .6s cubic-bezier(.23,1.000,.32,1.000) .2s both;animation:roll-in-blurred-bottom .6s cubic-bezier(.23,1.000,.32,1.000) .2s both}
+@-webkit-keyframes roll-in-blurred-bottom{0%{-webkit-transform:translateY(800px) rotate(720deg);transform:translateY(800px) rotate(720deg);-webkit-filter:blur(50px);filter:blur(50px);opacity:0}100%{-webkit-transform:translateY(0) rotate(0deg);transform:translateY(0) rotate(0deg);opacity:1}}@keyframes roll-in-blurred-bottom{0%{-webkit-transform:translateY(800px) rotate(720deg);transform:translateY(800px) rotate(720deg);-webkit-filter:blur(50px);filter:blur(50px);opacity:0}100%{-webkit-transform:translateY(0) rotate(0deg);transform:translateY(0) rotate(0deg);opacity:1}}
+.roll-in-blurred-top{-webkit-animation:roll-in-blurred-top .6s cubic-bezier(.23,1.000,.32,1.000) .2s both;animation:roll-in-blurred-top .6s cubic-bezier(.23,1.000,.32,1.000) .2s both}
+@-webkit-keyframes roll-in-blurred-top{0%{-webkit-transform:translateY(-800px) rotate(-720deg);transform:translateY(-800px) rotate(-720deg);-webkit-filter:blur(50px);filter:blur(50px);opacity:0}100%{-webkit-transform:translateY(0) rotate(0deg);transform:translateY(0) rotate(0deg);-webkit-filter:blur(0);filter:blur(0);opacity:1}}@keyframes roll-in-blurred-top{0%{-webkit-transform:translateY(-800px) rotate(-720deg);transform:translateY(-800px) rotate(-720deg);-webkit-filter:blur(50px);filter:blur(50px);opacity:0}100%{-webkit-transform:translateY(0) rotate(0deg);transform:translateY(0) rotate(0deg);-webkit-filter:blur(0);filter:blur(0);opacity:1}}
+
+.slide-in-right{-webkit-animation:slide-in-right .5s cubic-bezier(.25,.46,.45,.94) both;animation:slide-in-right .5s cubic-bezier(.25,.46,.45,.94) both}
+@-webkit-keyframes slide-in-right{0%{-webkit-transform:translateX(1000px);transform:translateX(1000px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}@keyframes slide-in-right{0%{-webkit-transform:translateX(1000px);transform:translateX(1000px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}
+
+/* Grow Shadow */
+.hvr-grow-shadow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform;
+}
+.hvr-grow-shadow:hover, .hvr-grow-shadow:focus, .hvr-grow-shadow:active {
+  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}

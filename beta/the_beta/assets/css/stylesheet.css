@@ -3,7 +3,7 @@
 @import 'https://fonts.googleapis.com/css?family=Comfortaa:300,400,700&subset=cyrillic,cyrillic-ext,latin-ext';
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
 body{
-    background: #72d0f4;
+    background: #232741;
     color: #ffffff;
     margin: 0;
     font-family: 'Open Sans', sans-serif;
@@ -49,6 +49,16 @@ body{
 	line-height: 1;
     position: static;
 }
+#particles-js{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-image: url('');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
 /* Media queries */
 
 @media screen and (max-width: 45em) {
@@ -165,12 +175,12 @@ h2 {
  * buttons
  * ----------------------------------------
  */
-button {color:#454545;background:transparent;border-width:2px;border-style: solid;border-color: #454545;position:relative;margin:1em;display:inline-block;padding:0.5em 1em;transition:all 0.3s ease-in-out;text-align:center;
+button {color:#454545;background:transparent;border-width:2px;border-style: solid;border-color: #d94f5c;position:relative;margin:1em;display:inline-block;padding:0.5em 1em;transition:all 0.3s ease-in-out;text-align:center;
 font-family:comfortaa;font-weight:bold;}
 button:before, button:after {content:'';
     display:block;
     position:absolute;
-    border-color:#454545;
+    border-color:#d94f5c;
     box-sizing:border-box;
     border-style:solid;
     width:1em;
@@ -188,14 +198,14 @@ button:hover:before, button:hover:after {
     height:calc(100% + 12px);
     border-color:#fff}
 button:hover {
-    color:#353535;
+    color:#d94f5c;
     background-color:#fff;
     border-color:#fff}
 
-.pink button {color:#eb1777;border-color:#eb1777;}
-.pink button:before, .pink button:after  {border-color:#eb1777}
-.pink button:hover:before, .pink button:hover:after {border-color:#eb1777;}
-.pink button:hover {color:#fff;background-color:#eb1777;border-color:#eb1777;}
+.pink button {color:#d94f5c;border-color:#d94f5c;}
+.pink button:before, .pink button:after  {border-color:#d94f5c}
+.pink button:hover:before, .pink button:hover:after {border-color:#d94f5c;}
+.pink button:hover {color:#fff;background-color:#d94f5c;border-color:#d94f5c;}
 .pink .panel {max-width:960px;text-align:center;position:relative;margin:auto;}
 .socialbuttons{
     padding: 100px;
@@ -232,3 +242,15 @@ button:hover {
  */
 .focus-in-expand{-webkit-animation:focus-in-expand .8s cubic-bezier(.25,.46,.45,.94) 1s both;animation:focus-in-expand .8s cubic-bezier(.25,.46,.45,.94) 1s both}
 @-webkit-keyframes focus-in-expand{0%{letter-spacing:-.5em;-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-filter:blur(0);filter:blur(0);opacity:1}}@keyframes focus-in-expand{0%{letter-spacing:-.5em;-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-filter:blur(0);filter:blur(0);opacity:1}}
+/* Footer */
+
+	#footer {
+		bottom: 0;
+		cursor: default;
+		height: 6em;
+		left: 0;
+		line-height: 8em;
+		position: absolute;
+		text-align: center;
+		width: 100%;
+	}

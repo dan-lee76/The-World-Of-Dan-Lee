@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<head>
+    <title>CS Revsision - Problem Solving</title>
+    <link rel="stylesheet" href="assets/css/stylesheet.css">
+</head>
+
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <div class="header">
+        <h2>How to revise for </h2>
+        <h1>COMPUTER SCIENCE EXAM</h1>
+        <div class="center-hed">
+            <hr>
+        </div>
+        <h2><b>Topic 1 - Problem Solving</b></h2>
+</div>
+<div class="navbar" id="nav_bar">
+  <a href="index.html">Home</a>
+  <a class="active" href="1-problem-solving.html">Topic 1 - Problem Solving</a>
+  <a href="2-programming.html">Topic 2 - Programming</a>
+  <a href="3-data.html">Topic 3 - Data</a>
+  <a href="4-computers.html">Topic 4 - Computers</a>
+  <a href="html.html">HTML Tags - Cos why not</a>
+</div>
+<div class="center">
+<p><img src="content/spec-problem-solving.PNG" alt="Problem Solving - Specififcation" width="439" height="547"></p>
+<hr>
+<h3>Algorithms</h3>
+        <hr>
+        <p>Algorithms are sets of step-by-step instructions for the computer to follow. They are at the heart of all computer programs.</p>
+        <p>You can think of an algorithm as similar to a food recipe. If you make a sandwich, you follow a set of steps to put the different ingredients together. You bring ingredients together, assemble them as you like, and produce a final product - the sandwich. If you were asked to write down instructions to make a sandwich, you could create a written algorithm.</p>
+        <p>Within your sandwich algorithm you would need to specify:</p>
+        <ul>
+            <li><b>inputs</b> - ingredients and quantities </li>
+            <li><b>the process</b> - recipe or method </li>
+            <li><b>output</b> - what the finished sandwich will be like </li>
+        </ul>
+        <p>
+            <IMG alt="Input processing output diagram" src="https://bam.files.bbci.co.uk/bam/live/content/z746yrd/small" data-src-d="https://bam.files.bbci.co.uk/bam/live/content/z746yrd/large" data-src-t="https://bam.files.bbci.co.uk/bam/live/content/z746yrd/medium">
+        </p>
+
+        <hr>
+        <h3>Use of algorithms</h3>
+        <hr>
+        <p>Algorithms are used in all areas of computing. Examples include:</p>
+        <ul>
+            <li><b>PageRank</b> - Google's search engine uses a highly effective algorithm called PageRank to find the best matches for search terms. PageRank decides which pages are listed first when you search for something. This algorithm is highly sophisticated and played an important role in Google Search's success. </li>
+            <li><b>Weather forecasting</b> - the Met Office uses weather forecasting algorithms to model weather patterns and make predictions. </li>
+        </ul>
+        <p><img alt="Laptop running a program to track the predicted path of a hurricane" src="https://bam.files.bbci.co.uk/bam/live/content/zks8mp3/large"></p>
+        <p>Algorithms are a great way of automating computer decisions. However, automating processes can lead to errors.</p>
+        <p>For example, the Amazon website uses algorithms to decide the price of products. In 2011, the price of a book called 'The Making of a Fly' (about the molecular biology of a fly) jumped to &pound;14 million as the pricing algorithms used by Amazon to set and update prices started outbidding each other. This raised the book price.</p>
+
+        <hr>
+        <h3>Designing an algorithm</h3>
+        <hr>
+        <p>Computer programs are algorithms or a collection of algorithms.</p>
+        <p>When designing an algorithm, you need to assess how complex it could be. With a food recipe, a simple command like 'spread butter on bread' could be made much more detailed. For example:</p>
+        <ul>
+            <li>1.Remove lid from butter tub and place to one side. </li>
+            <li>2.Place 5 grams of butter on the tip of the knife. </li>
+            <li>3.Position the tip of the knife on the upwards side of the slice of bread with the butter between the knife and the bread. </li>
+            <li>4.Move the knife backwards and forwards in a sweeping motion across the bread to spread it at an even thickness. </li>
+            <li>5.Repeat steps 2 to 4 until one side of the slice of bread is evenly coated with butter. </li>
+            <li>6.Remove any excess butter from the tip of the knife. </li>
+        </ul>
+            <IMG alt="Algorithm flowchart illustrating the steps involved to make a sandwich" src="https://bam.files.bbci.co.uk/bam/live/content/zhwsr82/large">
+        <hr>
+        <h3>Variables</h3>
+        <hr>
+        <p>Algorithms have values that can be constant or variable. These values are stored in a memory location and can be changed, depending on the output that is needed. For example, the main content for a sandwich could be cheese or jam. In this case 'main ingredient' would be a
+            <B>value</B> which is
+            <B>variable</B>. You could require one sandwich or 57 sandwiches. This would be another variable.</p>
+        <hr>
+        <h3>Bubble sort</h3>
+        <hr>
+        <p>An example of a computer algorithm is <b>bubble sort</b>. This is a simple algorithm used for taking a list of jumbled up numbers and putting them into the correct order. The algorithm runs as follows:</p>
+        <ul>
+            <li>1.Look at the first number in the list. </li>
+            <li>2.Compare the current number with the next number. </li>
+            <li>3.Is the next number smaller than the current number? If so, swap the two numbers around. If not, do not swap. </li>
+            <li>4.Move to the next number along in the list and make this the current number. </li>
+            <li>5.Repeat from step 2 until the last number in the list has been reached. </li>
+            <li>6.If any numbers were swapped, repeat again from step 1. </li>
+            <li>7.If the end of the list is reached without any swaps being made, then the list is ordered and the algorithm can stop. </li>
+        </ul>
+
+        <h4>Bubble sort example</h4>
+
+        <p>This algorithm could be used to sort the following list:</p>
+        <p>3, 2, 4, 1, 5</p>
+        <p>The first loop of the algorithm would produce:</p>
+        <ul>
+            <li><b>3</b>, <b>2</b>, 4, 1, 5 (2&lt;3 so the two values are swapped) </li>
+            <li>2, <b>3</b>, <b>4</b>, 1, 5 (3&lt;4 so the two values are <b>not</b> swapped) </li>
+            <li>2, 3, <b>4</b>, <b>1</b>, 5 (1&lt;4 so the two values are swapped) </li>
+            <li>2, 3, 1, <b>4</b>, <b>5</b> (4&lt;5 so the two values are <b>not</b> swapped) </li>
+            <li>2, 3, 1, 4, 5 (<b>First pass completed</b>) </li>
+        </ul>
+        <p>Values were swapped so the algorithm needs to run again. The second loop of the algorithm would start with the final list and run again as follows:</p>
+        <ul>
+            <li><b>2</b>, <b>3</b>, 1, 4, 5 (2&lt;3 so the values are <b>not</b> swapped) </li>
+            <li>2, <b>3</b>, <b>1</b>, 4, 5 (1&lt;3 so the values are swapped) </li>
+            <li>2, 1, <b>3</b>, <b>4</b>, 5 (3&lt;4 so the values are <b>not</b> swapped) </li>
+            <li>2, 1, 3, <b>4</b>, <b>5</b> (4&lt;5 so the values are <b>not</b> swapped) </li>
+            <li>2, 1, 3, 4, 5 (<b>Second pass completed</b>) </li>
+        </ul>
+        <ul>
+            <li><b>2</b>, <b>1</b>, 3, 4, 5 (1&lt;2 so the values are swapped) </li>
+            <li>1, <b>2</b>, <b>3</b>, 4, 5 (2&lt;3 so the values are <b>not</b> swapped) </li>
+            <li>1, 2, <b>3</b>, <b>4</b>, 5 (3&lt;4 so the values are <b>not</b> swapped) </li>
+            <li>1, 2, 3, <b>4</b>, <b>5</b> (4&lt;5 so the values are <b>not</b> swapped) </li>
+            <li>1, 2, 3, 4, 5 (<b>Third pass completed</b>) </li>
+        </ul>
+        <p>Values were swapped so the algorithm needs to run again. This time there will be no swaps as the values are in order:</p>
+        <p>1, 2, 3, 4, 5</p>
+        <p>The algorithm has completed a loop without swapping anything and so it knows that the list is now ordered and can stop.</p>
+        <hr>
+        <h3>Pseudocode<h3>
+<hr>
+<p>Pseudocode is a language which isnt correct. It can be good and used before you program or create an algorithm. It is not correct, however it is in a style of a program lanuguage and can easily be read by anyone</p>
+<p>Computer Programmers use pseudocode to help plan out the code  they will need. </p>
+<ul>
+  <li>For game  making</li>
+  <li>Creating  websites</li>
+  <li>Control  software &ndash; robots / machinery</li>
+  <li>ANYTHING  where planning is needed = pseudocode is used to layout the tasks/actions</li>
+</ul>
+<p><img src="content/algorithm - types.png" alt="algorithm - types" width="580" height="500" /></p>
+<p><img src="content/algorithm - example.PNG" alt="Algorithm - Example" width="225" height="500"></p>
+<p><a href="https://www.bbc.co.uk/education/guides/z22wwmn/revision/1">Want more information? Click Me!</a></p>
+          </div>
+<script src="assets/js/script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="assets/js/nav.js"></script>
+</body>
+</html>
